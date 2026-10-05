@@ -1,0 +1,18 @@
+# Formatting rules for conform.nvim (clang-format) and clang-tidy.
+# Matches the existing style: 2-space indent, 80 columns, pointers hug the name.
+BasedOnStyle: LLVM
+
+IndentWidth: 2
+ColumnLimit: 80
+TabWidth: 2
+UseTab: Never
+
+PointerAlignment: Left
+DerivePointerAlignment: false
+
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: WithoutElse
+
+SortIncludes: CaseSensitive
+IncludeBlocks: Preserve
