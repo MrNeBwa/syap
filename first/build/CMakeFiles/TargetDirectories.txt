@@ -1,7 +1,0 @@
-/home/nebwa/Projects/syap/first/build/CMakeFiles/MyProgram.dir
-/home/nebwa/Projects/syap/first/build/CMakeFiles/edit_cache.dir
-/home/nebwa/Projects/syap/first/build/CMakeFiles/rebuild_cache.dir
-/home/nebwa/Projects/syap/first/build/CMakeFiles/list_install_components.dir
-/home/nebwa/Projects/syap/first/build/CMakeFiles/install.dir
-/home/nebwa/Projects/syap/first/build/CMakeFiles/install/local.dir
-/home/nebwa/Projects/syap/first/build/CMakeFiles/install/strip.dir
