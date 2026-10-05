@@ -1,1 +1,0 @@
-/usr/bin/c++ -O2 -g -DNDEBUG -Wl,--dependency-file=CMakeFiles/MyProgram.dir/link.d CMakeFiles/MyProgram.dir/src/main.cpp.o CMakeFiles/MyProgram.dir/src/user.cpp.o CMakeFiles/MyProgram.dir/src/regUser.cpp.o -o MyProgram
