@@ -1,5 +1,8 @@
 #include "user.h"
 
+#include "forum.h"
+
+#include <memory>
 #include <utility>
 
 user::user() = default;
@@ -17,9 +20,18 @@ const std::string& user::login() const noexcept {
   return login_;
 }
 
-std::string user::createMessage() const {
-  if (login_.empty()) {
-    return "Hello, anonymous user " + std::to_string(user_id_);
+void user::setLogin(std::string login) {
+  login_ = std::move(login);
+}
+
+std::string user::createMessage(const std::shared_ptr<forum>& uforum,
+                                const std::string& text) const {
+  if (!uforum) {
+    return "No forum to send the message to";
   }
-  return "Hello, " + login_ + " (#" + std::to_string(user_id_) + ")";
+  if (text.empty()) {
+    return "Message is empty";
+  }
+  uforum->addMessage(user_id_, text);
+  return "Message is send";
 }

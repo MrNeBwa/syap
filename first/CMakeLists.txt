@@ -6,15 +6,16 @@ cmake_minimum_required(VERSION 3.21)
 # Only meaningful for single-config generators (Ninja/Makefiles), not MSVC.
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-project(MyCpp20Project
+project(laba1
   VERSION 1.0.0
-  DESCRIPTION "A small C++20 project"
+  DESCRIPTION "A small c++ forum"
   LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
+set(CMAKE_AUTOMOC ON)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 # Default to an optimized build with debug symbols for single-config generators.
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   set(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "Build type" FORCE)
@@ -25,24 +26,36 @@ endif()
 # List sources explicitly: file(GLOB) does not re-run configure when files change.
 # Headers are listed so IDEs and build tools show them as part of the target;
 # they are not compiled on their own.
-add_executable(MyProgram
+add_executable(laba1
   src/main.cpp
   src/user.cpp
   src/regUser.cpp
+  src/userDB.cpp
+  src/forum.cpp
+  src/interface.cpp
   include/user.h
   include/regUser.h
+  include/userDB.h
+  include/forum.h
+  include/message.h
+  include/interface.h
   )
 
-target_include_directories(MyProgram PRIVATE
+target_include_directories(laba1 PRIVATE
   "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
+target_link_libraries(laba1
+    Qt6::Widgets
+)
+
+
 if(MSVC)
-  target_compile_options(MyProgram PRIVATE /W4 /permissive-)
+  target_compile_options(laba1 PRIVATE /W4 /permissive-)
 else()
-  target_compile_options(MyProgram PRIVATE -Wall -Wextra -Wpedantic)
+  target_compile_options(laba1 PRIVATE -Wall -Wextra -Wpedantic)
 endif()
 
-install(TARGETS MyProgram RUNTIME DESTINATION bin)
+install(TARGETS laba1 RUNTIME DESTINATION bin)
 
 # clangd looks for compile_commands.json at the project root, but CMake writes
 # it into the build dir. Bridge the two with a symlink.
