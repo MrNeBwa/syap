@@ -1,6 +1,8 @@
 #pragma once
 
+#include "forum.h"
 #include <cstdint>
+#include <memory>
 #include <string>
 
 class user {
@@ -12,11 +14,15 @@ public:
   user(user&&) = default;
   user& operator=(const user&) = default;
   user& operator=(user&&) = default;
-  ~user();
+  virtual ~user();
 
   [[nodiscard]] std::uint32_t id() const noexcept;
   [[nodiscard]] const std::string& login() const noexcept;
-  [[nodiscard]] std::string createMessage() const;
+  [[nodiscard]] std::string createMessage(const std::shared_ptr<forum>& uforum,
+                                          const std::string& text) const;
+
+protected:
+  void setLogin(std::string login);
 
 private:
   std::uint32_t user_id_ = 0;

@@ -1,12 +1,10 @@
-#include "regUser.h"
-#include "user.h"
-#include <iostream>
-int main() {
-  const user anonymous;
-  const user u{7, "nebwa"};
-  const regUser a{};
-  std::cout << anonymous.createMessage() << '\n';
-  std::cout << u.createMessage() << '\n';
-  std::cout << "id=" << u.id() << " login=" << u.login() << '\n';
-  return 0;
+#include "interface.h"
+
+#include <QApplication>
+
+int main(int argc, char* argv[]) {
+  QApplication app(argc, argv);
+  interface window;
+  window.show();
+  return app.exec();
 }
