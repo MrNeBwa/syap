@@ -4,12 +4,15 @@
 #include "user.h"
 #include "userDB.h"
 
+#include <QAbstractGraphicsShapeItem>
 #include <QMainWindow>
 #include <QStackedWidget>
 #include <QWidget>
+#include <QGraphicsScene>
 #include <cstdint>
 #include <memory>
 #include <string>
+#include <set>
 
 class QLabel;
 class QLineEdit;
@@ -26,6 +29,9 @@ private slots:
   void sendMessage();
 
 private:
+  void ask(
+    size_t size_,
+    std::function<void(uint32_t, std::string)> op);
   void changeBottom(const int&& a);
   void refreshMessages();
   void setStatus(const QString& text);
@@ -39,6 +45,8 @@ private:
   QLineEdit* loginEdit_ = nullptr;
   QLineEdit* passwordEdit_ = nullptr;
   
+  QGraphicsScene *scene;
+  std::set <QAbstractGraphicsShapeItem*> scene_obj_;
   QStackedWidget* stack;
   QLabel* statusLabel_ = nullptr;
   QTextEdit* messageView_ = nullptr;

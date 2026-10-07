@@ -9,6 +9,9 @@
 #include <QTextEdit>
 #include <QVBoxLayout>
 #include <QStackedWidget>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QGraphicsItem>
 
 interface::interface(QWidget* parent) : QMainWindow(parent) {
   forum_ = std::make_shared<forum>("General");
@@ -18,12 +21,12 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   auto* main = new QWidget(this);
   auto* root = new QVBoxLayout(main);
   auto* top = new QHBoxLayout(main);
-  auto* foot = new QHBoxLayout(main);
+  auto* foot = new QVBoxLayout(main);
   stack = new QStackedWidget(main);
   
   #pragma endregion
 
-  top->addWidget(stack);
+  
 
   #pragma region buttons
   QWidget* buttons = new QWidget();
@@ -31,9 +34,13 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   auto* createMessage = new QPushButton("Создать сообщение", main);
   auto* logininto = new QPushButton("Зайти в аккаунт", main);
   auto* getMessageList = new QPushButton("Получить список сообщений", main);
-  buttonsPage->addWidget(createMessage);
+  auto* deleteMessage = new QPushButton("Delete Message", main);
+  auto* changeLogin = new QPushButton("Change login", main);
+  auto* addUser = new QPushButton("Add user", main);
   buttonsPage->addWidget(logininto);
+  buttonsPage->addWidget(createMessage);
   buttonsPage->addWidget(getMessageList);
+  buttonsPage->addWidget(deleteMessage);
   stack->addWidget(buttons);
   stack->setCurrentWidget(buttons);
   stackTrace.push_back(buttons);
@@ -55,12 +62,26 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   stackTrace.push_back(login);
   #pragma endregion
 
+
+  #pragma region askPage
+  QWidget* askpage = new QWidget();
+  auto* asklayout = new QVBoxLayout(askpage);
+  auto *askEdit_ = new QLineEdit(main);
+  asklayout->addWidget(askEdit_);
+  stack->addWidget(askpage);
+  stackTrace.push_back(askpage);
+
+  #pragma endregion
+
+
   auto* content = new QHBoxLayout();
   messageView_ = new QTextEdit(main);
   messageView_->setReadOnly(true);
   content->addWidget(messageView_, 1);
-  top->addLayout(content, 1);
 
+  top->addLayout(content, 1);
+  top->addWidget(stack);
+  
   auto* sendRow = new QHBoxLayout();
   messageEdit_ = new QLineEdit(main);
   messageEdit_->setPlaceholderText("message");
@@ -71,6 +92,21 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
 
   statusLabel_ = new QLabel(main);
   foot->addWidget(statusLabel_);
+
+  #pragma region drawing
+
+  scene = new QGraphicsScene();
+  QGraphicsView *view = new QGraphicsView(scene);
+  QGraphicsRectItem *block =
+      scene->addRect(50, 50, 120, 70);
+  scene_obj_.insert(block);
+
+  block->setFlag(QGraphicsItem::ItemIsMovable);
+  block->setBrush(QColor("#ab4242"));
+  #pragma endregion
+
+
+  foot->addWidget(view);
   root->addLayout(top);
   root->addLayout(foot);
   setCentralWidget(main);
@@ -82,9 +118,25 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   connect(messageEdit_, &QLineEdit::returnPressed, this,
           &interface::sendMessage);
   connect(logininto, &QPushButton::clicked, this, [this](){changeBottom(std::move(1));});
+  connect(deleteMessage, &QPushButton::clicked, this, [this]() {
+    ask(4, [this](uint32_t id, std::string text) {
+        forum_->addMessage(id, text);
+    });
+  });
   setStatus("Not logged in");
   refreshMessages();
 }
+
+
+
+void interface::ask(
+    size_t size_,
+    std::function<void(uint32_t, std::string)> op
+){
+  stack->setCurrentWidget(stackTrace[2]);
+  
+}
+
 
 void interface::changeBottom(const int&& a){
   stack->setCurrentWidget(stackTrace[a]);
