@@ -29,9 +29,8 @@ private slots:
   void sendMessage();
 
 private:
-  void ask(
-    size_t size_,
-    std::function<void(uint32_t, std::string)> op);
+  std::vector<std::string> ask(const int& number);
+  void deleteMessageFun();
   void changeBottom(const int&& a);
   void refreshMessages();
   void setStatus(const QString& text);
@@ -42,6 +41,7 @@ private:
   std::shared_ptr<user> currentUser_;
   std::uint32_t nextUserId_ = 100;
   
+  QLayout* asklayout = nullptr;
   QLineEdit* loginEdit_ = nullptr;
   QLineEdit* passwordEdit_ = nullptr;
   

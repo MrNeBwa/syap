@@ -65,9 +65,7 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
 
   #pragma region askPage
   QWidget* askpage = new QWidget();
-  auto* asklayout = new QVBoxLayout(askpage);
-  auto *askEdit_ = new QLineEdit(main);
-  asklayout->addWidget(askEdit_);
+  asklayout = new QVBoxLayout(askpage);
   stack->addWidget(askpage);
   stackTrace.push_back(askpage);
 
@@ -118,23 +116,27 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   connect(messageEdit_, &QLineEdit::returnPressed, this,
           &interface::sendMessage);
   connect(logininto, &QPushButton::clicked, this, [this](){changeBottom(std::move(1));});
-  connect(deleteMessage, &QPushButton::clicked, this, [this]() {
-    ask(4, [this](uint32_t id, std::string text) {
-        forum_->addMessage(id, text);
-    });
-  });
+  connect(deleteMessage, &QPushButton::clicked, this, &interface::deleteMessageFun);
   setStatus("Not logged in");
   refreshMessages();
 }
 
+void interface::deleteMessageFun(){
+  ask(2);
+}
 
-
-void interface::ask(
-    size_t size_,
-    std::function<void(uint32_t, std::string)> op
+std::vector<std::string> interface::ask(
+    const int& number
 ){
-  stack->setCurrentWidget(stackTrace[2]);
-  
+  //create that many enters with
+  std::vector<QLineEdit*> textFields (number, nullptr);
+  for (size_t i = 0; i < number; ++i){
+    auto *askEdit_ = new QLineEdit();
+    asklayout->addWidget(askEdit_);
+    textFields[i] = askEdit_;
+  }
+  changeBottom(2);
+  return {};
 }
 
 
