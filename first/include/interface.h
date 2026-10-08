@@ -29,8 +29,10 @@ private slots:
   void sendMessage();
 
 private:
-  std::vector<std::string> ask(const int& number);
-  void deleteMessageFun();
+  void ask(int number,
+    std::function<void(std::vector<QLineEdit*>)> forward);
+  void createAccoutFun(std::vector<QLineEdit*> args);
+  void deleteMessageFun(std::vector<QLineEdit*> args);
   void changeBottom(const int&& a);
   void refreshMessages();
   void setStatus(const QString& text);

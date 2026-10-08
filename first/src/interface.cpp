@@ -40,6 +40,7 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   buttonsPage->addWidget(logininto);
   buttonsPage->addWidget(createMessage);
   buttonsPage->addWidget(getMessageList);
+  buttonsPage->addWidget(changeLogin);
   buttonsPage->addWidget(deleteMessage);
   stack->addWidget(buttons);
   stack->setCurrentWidget(buttons);
@@ -116,27 +117,60 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   connect(messageEdit_, &QLineEdit::returnPressed, this,
           &interface::sendMessage);
   connect(logininto, &QPushButton::clicked, this, [this](){changeBottom(std::move(1));});
-  connect(deleteMessage, &QPushButton::clicked, this, &interface::deleteMessageFun);
+  connect(deleteMessage, &QPushButton::clicked, this, [this]()
+  {ask(1, [this](std::vector<QLineEdit*> args){deleteMessageFun(args);});});
+  connect(changeLogin, &QPushButton::clicked, this, [this](){
+    ask(2, [this](std::vector<QLineEdit*> args) {createAccoutFun(args);});
+  });
   setStatus("Not logged in");
   refreshMessages();
 }
 
-void interface::deleteMessageFun(){
-  ask(2);
+void interface::deleteMessageFun(std::vector<QLineEdit*> args)
+{
+  forum_->deleteMessage(args[0]->text().toStdString());
+  refreshMessages();
+  changeBottom(0);
 }
 
-std::vector<std::string> interface::ask(
-    const int& number
-){
-  //create that many enters with
-  std::vector<QLineEdit*> textFields (number, nullptr);
-  for (size_t i = 0; i < number; ++i){
-    auto *askEdit_ = new QLineEdit();
-    asklayout->addWidget(askEdit_);
-    textFields[i] = askEdit_;
-  }
-  changeBottom(2);
-  return {};
+void interface::createAccoutFun(std::vector<QLineEdit*> args){
+  //create account of user with args[0] username and args[1] password
+  db_.add(args[0]->text().toStdString(), args[1]->text().toStdString());
+  changeBottom(0);
+  currentUser_ = std::make_shared<regUser>(nextUserId_++, args[0]->text().toStdString(),
+  args[1]->text().toStdString());
+  this->changeBottom(std::move(0));
+  loginEdit_->clear();
+  passwordEdit_->clear();
+  setStatus(QString("Logged in as %1").arg(args[0]->text()));
+}
+
+void interface::ask(
+    int number,
+    std::function<void(std::vector<QLineEdit*>)> forward
+)
+{
+    std::vector<QLineEdit*> textFields;
+
+    for (int i = 0; i < number; ++i)
+    {
+        auto* askEdit = new QLineEdit();
+
+        asklayout->addWidget(askEdit);
+        textFields.push_back(askEdit);
+    }
+
+    auto* submitBt = new QPushButton("Дальше");
+    asklayout->addWidget(submitBt);
+
+    changeBottom(2);
+
+    connect(submitBt, &QPushButton::clicked,
+            this,
+            [textFields, forward]()
+            {
+                forward(textFields);
+            });
 }
 
 
@@ -195,8 +229,9 @@ void interface::refreshMessages() {
 
   for (const auto& msg : forumPtr->getMessages()) {
     messageView_->append(
-        QString("#%1: %2")
+        QString("#%1-%2: %3")
             .arg(msg.userID())
+            .arg(msg.ID)
             .arg(QString::fromStdString(msg.text())));
   }
 }
