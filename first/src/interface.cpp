@@ -9,9 +9,13 @@
 #include <QTextEdit>
 #include <QVBoxLayout>
 #include <QStackedWidget>
-#include <QGraphicsView>
-#include <QGraphicsScene>
-#include <QGraphicsItem>
+
+namespace {
+const QColor kUserDBColor("#2f6fbd");
+const QColor kForumColor("#3f9a52");
+const QColor kUserColor("#d97a26");
+const QString kUserDBKey = "userDB";
+} // namespace
 
 interface::interface(QWidget* parent) : QMainWindow(parent) {
   forum_ = std::make_shared<forum>("General");
@@ -94,18 +98,14 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
 
   #pragma region drawing
 
-  scene = new QGraphicsScene();
-  QGraphicsView *view = new QGraphicsView(scene);
-  QGraphicsRectItem *block =
-      scene->addRect(50, 50, 120, 70);
-  scene_obj_.insert(block);
+  graph_.ensureEntity(kUserDBKey, "userDB", kUserDBColor);
+  graph_.ensureEntity(forumKey(), forumLabel(), kForumColor);
+  graph_.beginAction();
 
-  block->setFlag(QGraphicsItem::ItemIsMovable);
-  block->setBrush(QColor("#ab4242"));
   #pragma endregion
 
 
-  foot->addWidget(view);
+  foot->addWidget(graph_.view());
   root->addLayout(top);
   root->addLayout(foot);
   setCentralWidget(main);
@@ -116,33 +116,98 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   connect(sendButton, &QPushButton::clicked, this, &interface::sendMessage);
   connect(messageEdit_, &QLineEdit::returnPressed, this,
           &interface::sendMessage);
-  connect(logininto, &QPushButton::clicked, this, [this](){changeBottom(std::move(1));});
-  connect(deleteMessage, &QPushButton::clicked, this, [this]()
-  {ask(1, [this](std::vector<QLineEdit*> args){deleteMessageFun(args);});});
-  connect(changeLogin, &QPushButton::clicked, this, [this](){
-    ask(2, [this](std::vector<QLineEdit*> args) {createAccoutFun(args);});
+  connect(logininto, &QPushButton::clicked, this, [this]() { changeBottom(1); });
+  connect(deleteMessage, &QPushButton::clicked, this, [this]() {
+    ask(1, [this](std::vector<QLineEdit*> args) { deleteMessageFun(args); });
   });
+  connect(changeLogin, &QPushButton::clicked, this, [this]() {
+    ask(1, [this](std::vector<QLineEdit*> args) { changeLoginFun(args); });
+  });
+  connect(addUser, &QPushButton::clicked, this, [this]() {
+    ask(2, [this](std::vector<QLineEdit*> args) { createAccoutFun(args); });
+  });
+  connect(createMessage, &QPushButton::clicked, this,
+          [this]() { messageEdit_->setFocus(); });
+  connect(getMessageList, &QPushButton::clicked, this, &interface::getMessages);
   setStatus("Not logged in");
   refreshMessages();
 }
 
 void interface::deleteMessageFun(std::vector<QLineEdit*> args)
 {
-  forum_->deleteMessage(args[0]->text().toStdString());
+  graph_.beginAction();
+  graph_.ensureEntity(forumKey(), forumLabel(), kForumColor);
+
+  const bool removed = forum_->deleteMessage(args[0]->text().toStdString());
+
+  if (currentUser_) {
+    graph_.ensureEntity(userKey(), userNameLabel(), kUserColor);
+    graph_.addRelation(userKey(), forumKey(),
+                       removed ? "deleteMessage()" : "deleteMessage() ✗");
+  } else {
+    graph_.addRelation(forumKey(), forumKey(),
+                       removed ? "deleteMessage()" : "deleteMessage() ✗");
+  }
+
+  setStatus(removed ? QString("Message deleted")
+                    : QString("Message not found: %1").arg(args[0]->text()));
   refreshMessages();
   changeBottom(0);
 }
 
 void interface::createAccoutFun(std::vector<QLineEdit*> args){
-  //create account of user with args[0] username and args[1] password
-  db_.add(args[0]->text().toStdString(), args[1]->text().toStdString());
+  if (args.size() < 2) {
+    return;
+  }
+  const std::string name = args[0]->text().toStdString();
+  const std::string password = args[1]->text().toStdString();
+
+  graph_.beginAction();
+  graph_.ensureEntity(kUserDBKey, "userDB", kUserDBColor);
+
+  const std::uint32_t newId = nextUserId_;
+  const QString newKey = QString("user:%1").arg(newId);
+  graph_.ensureEntity(newKey,
+                      QString("User: %1").arg(QString::fromStdString(name)),
+                      kUserColor);
+  graph_.addRelation(newKey, kUserDBKey, "register()");
+
+  const bool added = db_.add(name, password);
+  currentRegUser_ = std::make_shared<regUser>(nextUserId_++, name, password);
+  currentUser_ = currentRegUser_;
+
+  graph_.ensureEntity(userKey(), userNameLabel(), kUserColor);
+  graph_.addRelation(kUserDBKey, userKey(), added ? "created" : "exists");
+  graph_.addPersistentRelation(userKey(), kUserDBKey, "stored");
+
   changeBottom(0);
-  currentUser_ = std::make_shared<regUser>(nextUserId_++, args[0]->text().toStdString(),
-  args[1]->text().toStdString());
-  this->changeBottom(std::move(0));
   loginEdit_->clear();
   passwordEdit_->clear();
   setStatus(QString("Logged in as %1").arg(args[0]->text()));
+}
+
+void interface::changeLoginFun(std::vector<QLineEdit*> args){
+  graph_.beginAction();
+  graph_.ensureEntity(kUserDBKey, "userDB", kUserDBColor);
+
+  if (!currentRegUser_) {
+    graph_.addRelation(kUserDBKey, kUserDBKey, "changeLogin() denied");
+    setStatus("Log in first");
+    changeBottom(0);
+    return;
+  }
+
+  const QString newLogin = args[0]->text();
+  const bool changed = currentRegUser_->changeLogin(newLogin.toStdString());
+
+  graph_.ensureEntity(userKey(), userNameLabel(), kUserColor);
+  graph_.addRelation(userKey(), userKey(),
+                     changed ? "changeLogin()" : "changeLogin() ✗");
+  graph_.addRelation(userKey(), kUserDBKey, "update()");
+
+  setStatus(changed ? QString("Login changed to %1").arg(newLogin)
+                    : QString("Login unchanged"));
+  changeBottom(0);
 }
 
 void interface::ask(
@@ -151,7 +216,7 @@ void interface::ask(
 )
 {
     std::vector<QLineEdit*> textFields;
-
+    clearLayout(asklayout);
     for (int i = 0; i < number; ++i)
     {
         auto* askEdit = new QLineEdit();
@@ -173,6 +238,23 @@ void interface::ask(
             });
 }
 
+void interface::clearLayout(QLayout* layout)
+{
+    if (!layout)
+        return;
+
+    while (QLayoutItem* item = layout->takeAt(0)) {
+        if (QWidget* widget = item->widget()) {
+            delete widget;
+        } else if (QLayout* childLayout = item->layout()) {
+            clearLayout(childLayout);
+            delete childLayout;
+        }
+
+        delete item;
+    }
+}
+
 
 void interface::changeBottom(const int&& a){
   stack->setCurrentWidget(stackTrace[a]);
@@ -183,18 +265,48 @@ void interface::login() {
   const std::string name = loginEdit_->text().toStdString();
   const std::string password = passwordEdit_->text().toStdString();
 
+  graph_.beginAction();
+  graph_.ensureEntity(kUserDBKey, "userDB", kUserDBColor);
+
+  const std::uint32_t attemptId = nextUserId_;
+  const QString attemptKey = QString("user:%1").arg(attemptId);
+  graph_.ensureEntity(attemptKey,
+                      QString("User: %1").arg(QString::fromStdString(name)),
+                      kUserColor);
+  graph_.addRelation(attemptKey, kUserDBKey, "login()");
+
   if (!db_.login(name, password)) {
     currentUser_.reset();
+    currentRegUser_.reset();
+    graph_.addRelation(kUserDBKey, attemptKey, "denied");
     setStatus(QString("Wrong login or password: %1").arg(
         QString::fromStdString(name)));
     return;
   }
 
-  currentUser_ = std::make_shared<regUser>(nextUserId_++, name, password);
-  this->changeBottom(std::move(0));
+  currentRegUser_ = std::make_shared<regUser>(nextUserId_++, name, password);
+  currentUser_ = currentRegUser_;
+  graph_.ensureEntity(userKey(), userNameLabel(), kUserColor);
+  graph_.addRelation(kUserDBKey, userKey(), "user");
+  graph_.addPersistentRelation(userKey(), kUserDBKey, "stored");
+  this->changeBottom(0);
   loginEdit_->clear();
   passwordEdit_->clear();
   setStatus(QString("Logged in as %1").arg(QString::fromStdString(name)));
+}
+
+void interface::getMessages() {
+  graph_.beginAction();
+  graph_.ensureEntity(forumKey(), forumLabel(), kForumColor);
+
+  if (currentUser_) {
+    graph_.ensureEntity(userKey(), userNameLabel(), kUserColor);
+    graph_.addRelation(userKey(), forumKey(), "getMessages()");
+  } else {
+    graph_.addRelation(forumKey(), forumKey(), "getMessages()");
+  }
+
+  refreshMessages();
 }
 
 
@@ -206,8 +318,15 @@ void interface::sendMessage() {
     return;
   }
   if (auto forumPtr = currentForum()) {
+    graph_.beginAction();
+    graph_.ensureEntity(forumKey(), forumLabel(), kForumColor);
+    graph_.ensureEntity(userKey(), userNameLabel(), kUserColor);
+
     const std::string result =
         currentUser_->createMessage(forumPtr, text.toStdString());
+    graph_.addRelation(userKey(), forumKey(),
+                       result == "Message is send" ? "createMessage()"
+                                                   : "createMessage() ✗");
     setStatus(QString::fromStdString(result));
     if (result == "Message is send") {
       messageEdit_->clear();
@@ -242,4 +361,26 @@ void interface::setStatus(const QString& text) {
 
 std::shared_ptr<forum> interface::currentForum() const {
   return forum_;
+}
+
+QString interface::userKey() const {
+  if (!currentUser_) {
+    return "user:none";
+  }
+  return QString("user:%1").arg(currentUser_->id());
+}
+
+QString interface::forumKey() const {
+  return QString("forum:%1").arg(QString::fromStdString(forum_->name()));
+}
+
+QString interface::forumLabel() const {
+  return QString("Forum: %1").arg(QString::fromStdString(forum_->name()));
+}
+
+QString interface::userNameLabel() const {
+  if (!currentUser_) {
+    return "User";
+  }
+  return QString("User: %1").arg(QString::fromStdString(currentUser_->login()));
 }

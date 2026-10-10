@@ -1,0 +1,9 @@
+/home/nebwa/Projects/syap/build/CMakeFiles/laba1.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/edit_cache.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/rebuild_cache.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/list_install_components.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/install.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/install/local.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/install/strip.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/laba1_autogen_timestamp_deps.dir
+/home/nebwa/Projects/syap/build/CMakeFiles/laba1_autogen.dir

@@ -33,12 +33,14 @@ add_executable(laba1
   src/userDB.cpp
   src/forum.cpp
   src/interface.cpp
+  src/entityGraph.cpp
   include/user.h
   include/regUser.h
   include/userDB.h
   include/forum.h
   include/message.h
   include/interface.h
+  include/entityGraph.h
   )
 
 target_include_directories(laba1 PRIVATE
