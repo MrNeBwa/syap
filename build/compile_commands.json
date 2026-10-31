@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/laba1_autogen/mocs_compilation.cpp.o -c /home/nebwa/Projects/syap/build/laba1_autogen/mocs_compilation.cpp",
+  "file": "/home/nebwa/Projects/syap/build/laba1_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/laba1.dir/laba1_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/src/main.cpp.o -c /home/nebwa/Projects/syap/first/src/main.cpp",
+  "file": "/home/nebwa/Projects/syap/first/src/main.cpp",
+  "output": "CMakeFiles/laba1.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/src/user.cpp.o -c /home/nebwa/Projects/syap/first/src/user.cpp",
+  "file": "/home/nebwa/Projects/syap/first/src/user.cpp",
+  "output": "CMakeFiles/laba1.dir/src/user.cpp.o"
+},
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/src/regUser.cpp.o -c /home/nebwa/Projects/syap/first/src/regUser.cpp",
+  "file": "/home/nebwa/Projects/syap/first/src/regUser.cpp",
+  "output": "CMakeFiles/laba1.dir/src/regUser.cpp.o"
+},
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/src/userDB.cpp.o -c /home/nebwa/Projects/syap/first/src/userDB.cpp",
+  "file": "/home/nebwa/Projects/syap/first/src/userDB.cpp",
+  "output": "CMakeFiles/laba1.dir/src/userDB.cpp.o"
+},
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/src/forum.cpp.o -c /home/nebwa/Projects/syap/first/src/forum.cpp",
+  "file": "/home/nebwa/Projects/syap/first/src/forum.cpp",
+  "output": "CMakeFiles/laba1.dir/src/forum.cpp.o"
+},
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/src/interface.cpp.o -c /home/nebwa/Projects/syap/first/src/interface.cpp",
+  "file": "/home/nebwa/Projects/syap/first/src/interface.cpp",
+  "output": "CMakeFiles/laba1.dir/src/interface.cpp.o"
+},
+{
+  "directory": "/home/nebwa/Projects/syap/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/nebwa/Projects/syap/build/laba1_autogen/include -I/home/nebwa/Projects/syap/first/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -g -std=c++20 -Wall -Wextra -Wpedantic -mno-direct-extern-access -o CMakeFiles/laba1.dir/src/entityGraph.cpp.o -c /home/nebwa/Projects/syap/first/src/entityGraph.cpp",
+  "file": "/home/nebwa/Projects/syap/first/src/entityGraph.cpp",
+  "output": "CMakeFiles/laba1.dir/src/entityGraph.cpp.o"
+}
+]
