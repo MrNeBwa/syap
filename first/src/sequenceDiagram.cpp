@@ -24,16 +24,15 @@
 
 namespace {
 
-const QColor kBackground("#f4f4f4");
-const QColor kLineColor("#333333");
+const QColor kBackground("#46171700");
+const QColor kLineColor("#d1d1d1");
 const QColor kLifelineColor("#8a8a8a");
 const QColor kActivationFill("#ffffff");
-const QColor kLabelColor("#1a1a1a");
+const QColor kLabelColor("#d7d6d6");
 
 constexpr qreal kArrowSize = 10.0;
 constexpr qreal kSceneMargin = 16.0;
 
-// Stacking order: lifelines < activation bars < arrows < headers.
 constexpr qreal kZLifeline = 0.0;
 constexpr qreal kZActivation = 1.0;
 constexpr qreal kZMessage = 2.0;
@@ -64,8 +63,6 @@ QPainterPath openArrowHead(const QPointF& tip, const QPointF& unit) {
   return head;
 }
 
-// A view that shrinks the scene to the widget's width (never enlarges it)
-// and keeps the newest messages in sight: the diagram grows downwards.
 class fitView : public QGraphicsView {
 public:
   using QGraphicsView::QGraphicsView;
@@ -102,8 +99,6 @@ sequenceDiagram::sequenceDiagram()
 }
 
 sequenceDiagram::~sequenceDiagram() {
-  // The view may outlive us (its parent widget owns it) or already be gone;
-  // either way it must not keep pointing at a deleted scene.
   if (view_) {
     view_->setScene(nullptr);
   }
@@ -168,8 +163,6 @@ void sequenceDiagram::render() {
     drawHeader(participants[i], layout.lifelines[i]);
   }
 
-  // Cover the whole layout and anything that sticks out of it
-  // (long labels next to a self loop on the right-most lifeline).
   const QRectF content(0.0, 0.0, layout.width, layout.height);
   scene_->setSceneRect(content.united(scene_->itemsBoundingRect())
                            .adjusted(-kSceneMargin, -kSceneMargin,
@@ -184,8 +177,7 @@ void sequenceDiagram::drawLifeline(const seq::LifelineLayout& lifeline) {
   pen.setStyle(Qt::DashLine);
   pen.setWidthF(1.2);
   auto* line = scene_->addLine(
-      QLineF(lifeline.x, lifeline.lineTop, lifeline.x, lifeline.lineBottom),
-      pen);
+      QLineF(lifeline.x, lifeline.lineTop, lifeline.x, lifeline.lineBottom), pen);
   line->setZValue(kZLifeline);
 }
 
@@ -271,7 +263,6 @@ void sequenceDiagram::drawMessage(const seq::Message& message,
   const QRectF bounds = label->boundingRect();
   const QPointF anchor = toQt(geometry.label);
   if (message.isSelf()) {
-    // Left-aligned, vertically centred next to the loop.
     label->setPos(anchor.x(), anchor.y() - bounds.height() / 2.0);
   } else {
     // Centred above the arrow.

@@ -38,7 +38,6 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   #pragma region buttons
   QWidget* buttons = new QWidget();
   auto* buttonsPage = new QVBoxLayout(buttons);
-  auto* createMessage = new QPushButton("Создать сообщение", main);
   auto* logininto = new QPushButton("Зайти в аккаунт", main);
   auto* getMessageList = new QPushButton("Получить список сообщений", main);
   auto* deleteMessage = new QPushButton("Delete Message", main);
@@ -46,7 +45,6 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   auto* addUser = new QPushButton("Add user", main);
   auto* clearDiagram = new QPushButton("Clear diagram", main);
   buttonsPage->addWidget(logininto);
-  buttonsPage->addWidget(createMessage);
   buttonsPage->addWidget(getMessageList);
   buttonsPage->addWidget(changeLogin);
   buttonsPage->addWidget(deleteMessage);
@@ -132,8 +130,6 @@ interface::interface(QWidget* parent) : QMainWindow(parent) {
   });
   connect(clearDiagram, &QPushButton::clicked, this,
           [this]() { resetDiagram(); });
-  connect(createMessage, &QPushButton::clicked, this,
-          [this]() { messageEdit_->setFocus(); });
   connect(getMessageList, &QPushButton::clicked, this, &interface::getMessages);
   setStatus("Not logged in");
   refreshMessages();
