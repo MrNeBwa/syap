@@ -7,9 +7,7 @@ namespace seq {
 
 namespace {
 
-// Vertical size of the loop drawn for a self message.
 constexpr double kSelfLoopHeight = 24.0;
-// How far an activation bar sticks out above/below its first/last arrow.
 constexpr double kActivationPad = 10.0;
 
 } // namespace
@@ -63,8 +61,6 @@ bool SequenceModel::addMessage(const std::string& from, const std::string& to,
     if (*fromIndex == *toIndex) {
       return false;
     }
-    // A participant can only be created once, and only before it
-    // takes part in anything else.
     for (const Message& message : messages_) {
       if (message.from == *toIndex || message.to == *toIndex) {
         return false;
@@ -114,15 +110,13 @@ std::vector<SequenceModel::Activation> SequenceModel::computeActivations() const
            outer.lastMessage >= inner.lastMessage;
   };
 
-  // Pass 1: every call (Sync/Create) activates its receiver, and, when a
-  // matching reply exists, keeps the caller active while it waits.
   for (std::size_t i = 0; i < count; ++i) {
     const Message& call = messages_[i];
     if (call.kind == MessageKind::Return || call.isSelf()) {
       continue;
     }
 
-    std::size_t reply = count; // "none"
+    std::size_t reply = count; // none
     for (std::size_t j = i + 1; j < count; ++j) {
       const Message& candidate = messages_[j];
       if (!returnUsed[j] && candidate.kind == MessageKind::Return &&
@@ -139,8 +133,6 @@ std::vector<SequenceModel::Activation> SequenceModel::computeActivations() const
       calleeLast = reply;
       callerLast = reply;
     } else {
-      // No explicit reply: the receiver stays active while it keeps
-      // sending messages itself right after being called.
       while (calleeLast + 1 < count &&
              messages_[calleeLast + 1].from == call.to) {
         ++calleeLast;
@@ -149,8 +141,6 @@ std::vector<SequenceModel::Activation> SequenceModel::computeActivations() const
 
     result.push_back({call.to, i, calleeLast, 0});
 
-    // The caller only gets its own bar if it is not already active
-    // (e.g. a callee that keeps calling further on).
     const bool callerActive = std::any_of(
         result.begin(), result.end(), [&](const Activation& activation) {
           return activation.participant == call.from &&
@@ -161,7 +151,6 @@ std::vector<SequenceModel::Activation> SequenceModel::computeActivations() const
     }
   }
 
-  // Drop exact duplicates, then compute nesting depth from containment.
   std::sort(result.begin(), result.end(),
             [](const Activation& a, const Activation& b) {
               if (a.participant != b.participant) {
@@ -190,8 +179,6 @@ std::vector<SequenceModel::Activation> SequenceModel::computeActivations() const
     result[i].depth = depth;
   }
 
-  // Pass 2: a self message is drawn as a small bar nested on top of
-  // whatever bar already covers it (or on top of a fresh base bar).
   for (std::size_t i = 0; i < count; ++i) {
     if (!messages_[i].isSelf()) {
       continue;
@@ -221,7 +208,6 @@ Layout SequenceModel::layout(const LayoutMetrics& m) const {
   const std::size_t columns = participants_.size();
   const std::size_t count = messages_.size();
 
-  // y of every message (the top of a self loop for self messages).
   std::vector<double> ys(count, 0.0);
   const double firstY = m.margin + m.headerHeight + m.firstMessageY;
   for (std::size_t i = 0; i < count; ++i) {
@@ -253,14 +239,11 @@ Layout SequenceModel::layout(const LayoutMetrics& m) const {
     line.lineBottom = lineBottom;
   }
 
-  // Activation bars. `rects[k]` is the geometry of `activations[k]`.
   const std::vector<Activation> activations = computeActivations();
   std::vector<Rect> rects;
   rects.reserve(activations.size());
   for (const Activation& activation : activations) {
     LifelineLayout& line = out.lifelines[activation.participant];
-    // A bar never starts above the lifeline (a created participant's
-    // lifeline begins below its header) and is never degenerate.
     const double top =
         std::max(ys[activation.firstMessage] - kActivationPad, line.lineTop);
     const double extra =
@@ -276,8 +259,6 @@ Layout SequenceModel::layout(const LayoutMetrics& m) const {
     line.activations.push_back(rect);
   }
 
-  // The innermost (deepest) bar of `participant` that covers message `i`:
-  // this is the block an arrow of that message is attached to.
   auto barOf = [&](std::size_t participant, std::size_t i) {
     std::optional<std::size_t> best;
     for (std::size_t k = 0; k < activations.size(); ++k) {
@@ -291,8 +272,6 @@ Layout SequenceModel::layout(const LayoutMetrics& m) const {
     if (best) {
       return rects[*best];
     }
-    // Cannot happen (every endpoint has a bar), but never leave an
-    // arrow without an anchor.
     const double x = out.lifelines[participant].x;
     return Rect{x - m.activationWidth / 2.0, ys[i], m.activationWidth, 0.0};
   };
@@ -318,8 +297,6 @@ Layout SequenceModel::layout(const LayoutMetrics& m) const {
     } else {
       item.toRight = to.x > from.x;
       const Rect source = barOf(message.from, i);
-      // Arrows leave the facing edge of the sender's block and end on the
-      // facing edge of the receiver's block (or header, for Create).
       const double startX = item.toRight ? source.x + source.w : source.x;
       double endX = 0.0;
       if (message.kind == MessageKind::Create) {
