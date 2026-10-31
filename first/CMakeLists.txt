@@ -33,14 +33,16 @@ add_executable(laba1
   src/userDB.cpp
   src/forum.cpp
   src/interface.cpp
-  src/entityGraph.cpp
+  src/sequenceModel.cpp
+  src/sequenceDiagram.cpp
   include/user.h
   include/regUser.h
   include/userDB.h
   include/forum.h
   include/message.h
   include/interface.h
-  include/entityGraph.h
+  include/sequenceModel.h
+  include/sequenceDiagram.h
   )
 
 target_include_directories(laba1 PRIVATE
@@ -55,6 +57,21 @@ if(MSVC)
   target_compile_options(laba1 PRIVATE /W4 /permissive-)
 else()
   target_compile_options(laba1 PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+
+# Unit tests for the Qt-free part of the sequence diagram (model + layout).
+option(LABA1_BUILD_TESTS "Build unit tests" ON)
+if(LABA1_BUILD_TESTS)
+  enable_testing()
+  add_executable(sequenceModelTest
+    tests/sequenceModelTest.cpp
+    src/sequenceModel.cpp)
+  target_include_directories(sequenceModelTest PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}/include")
+  if(NOT MSVC)
+    target_compile_options(sequenceModelTest PRIVATE -Wall -Wextra -Wpedantic)
+  endif()
+  add_test(NAME sequenceModel COMMAND sequenceModelTest)
 endif()
 
 install(TARGETS laba1 RUNTIME DESTINATION bin)

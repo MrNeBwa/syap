@@ -1,8 +1,8 @@
 #pragma once
 
-#include "entityGraph.h"
 #include "forum.h"
 #include "regUser.h"
+#include "sequenceDiagram.h"
 #include "user.h"
 #include "userDB.h"
 
@@ -40,9 +40,9 @@ private:
   void changeBottom(const int&& a);
   void refreshMessages();
   void setStatus(const QString& text);
+  void resetDiagram();
+  void drawForumCall(const QString& method, const QString& reply);
   [[nodiscard]] std::shared_ptr<forum> currentForum() const;
-  [[nodiscard]] QString userKey() const;
-  [[nodiscard]] QString forumKey() const;
   [[nodiscard]] QString forumLabel() const;
   [[nodiscard]] QString userNameLabel() const;
 
@@ -57,7 +57,7 @@ private:
   QLineEdit* loginEdit_ = nullptr;
   QLineEdit* passwordEdit_ = nullptr;
 
-  entityGraph graph_;
+  sequenceDiagram diagram_;
   QStackedWidget* stack = nullptr;
   QLabel* statusLabel_ = nullptr;
   QTextEdit* messageView_ = nullptr;
