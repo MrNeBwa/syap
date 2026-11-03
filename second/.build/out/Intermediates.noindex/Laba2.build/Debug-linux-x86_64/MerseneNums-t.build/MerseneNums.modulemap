@@ -1,0 +1,4 @@
+module MerseneNums {
+header "MerseneNums-Swift.h"
+export *
+}

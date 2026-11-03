@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/Laba2-primary.dia",
+    "emit-module-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/Laba2-primary-emit-module.d",
+    "emit-module-diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/Laba2-primary-emit-module.dia",
+    "pch" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/Laba2-primary-Bridging-header.pch",
+    "swift-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/Laba2-primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift" : {
+    "const-values" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main.swiftconstvalues",
+    "dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main.d",
+    "diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main.dia",
+    "index-unit-output-path" : "/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main.o",
+    "llvm-bc" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main.bc",
+    "object" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main.o",
+    "swift-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main.swiftdeps",
+    "swiftmodule" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Laba2-p.build/Objects-normal/x86_64/main~partial.swiftmodule"
+  }
+}

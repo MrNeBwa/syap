@@ -26,9 +26,6 @@ void user::setLogin(std::string login) {
 
 std::string user::createMessage(const std::shared_ptr<forum>& uforum,
                                 const std::string& text) const {
-  if (!uforum) {
-    return "No forum to send the message to";
-  }
   if (text.empty()) {
     return "Message is empty";
   }

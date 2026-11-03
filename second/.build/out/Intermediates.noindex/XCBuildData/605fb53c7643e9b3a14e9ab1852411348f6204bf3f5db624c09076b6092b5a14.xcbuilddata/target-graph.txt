@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+Target 'Laba2-product' in project 'Laba2'
+➜ Explicit dependency on target 'InputValidation' in project 'Laba2'
+➜ Explicit dependency on target 'MerseneNums' in project 'Laba2'
+Target 'MerseneNums' in project 'Laba2'
+➜ Explicit dependency on target 'InputValidation' in project 'Laba2'
+Target 'InputValidation' in project 'Laba2' (no dependencies)
