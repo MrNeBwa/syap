@@ -5,11 +5,11 @@
       "name" : "Laba2",
       "path" : "/home/nebwa/Projects/syap/second",
       "projects" : [
-        "c37325a0abb22c7cb26f4ecf63715519c945d699efa8500a5316f20b864dda72",
-        "7cb41c2349eea8f36bb7ef0001dd4f2582027d090fea0431aa661f060d032dee"
+        "e0af78eac432d8c9fd7196794fc051f3e61d243098cd56f703da13328d756a60",
+        "5ffd9bf407e97adfe754db901732bfd10e94ca2c0ece12092968737dd1f6af7c"
       ]
     },
-    "signature" : "7a3086c8452bd9351c8b965d8b5f4774669e06444c1e3c6d96f52b25c3dbd234",
+    "signature" : "0aef0b86c2c51f09df986bfd7a1fc06eadfe16242d465d17c9bb0f9dd8e30130",
     "type" : "workspace"
   },
   {
@@ -229,15 +229,15 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second::MAINGROUP::REF_4::REF_0",
-                "name" : "MersenneNums.swift",
-                "path" : "MersenneNums.swift",
+                "name" : "Trim.swift",
+                "path" : "Trim.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:second::MAINGROUP::REF_4",
-            "name" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
-            "path" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -246,13 +246,64 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second::MAINGROUP::REF_5::REF_0",
+                "name" : "Trim.swift",
+                "path" : "Trim.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:second::MAINGROUP::REF_5",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second::MAINGROUP::REF_6::REF_0",
+                "name" : "PrimeNums.swift",
+                "path" : "PrimeNums.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:second::MAINGROUP::REF_6",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second::MAINGROUP::REF_7::REF_0",
+                "name" : "PrimeNums.swift",
+                "path" : "PrimeNums.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:second::MAINGROUP::REF_7",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second::MAINGROUP::REF_8::REF_0",
                 "name" : "MersenneNums.swift",
                 "path" : "MersenneNums.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:second::MAINGROUP::REF_5",
+            "guid" : "PACKAGE:second::MAINGROUP::REF_8",
             "name" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
             "path" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
             "sourceTree" : "<absolute>",
@@ -262,14 +313,31 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second::MAINGROUP::REF_6::REF_0",
+                "guid" : "PACKAGE:second::MAINGROUP::REF_9::REF_0",
+                "name" : "MersenneNums.swift",
+                "path" : "MersenneNums.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:second::MAINGROUP::REF_9",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second::MAINGROUP::REF_10::REF_0",
                 "name" : "InputValidation.swift",
                 "path" : "InputValidation.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:second::MAINGROUP::REF_6",
+            "guid" : "PACKAGE:second::MAINGROUP::REF_10",
             "name" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
             "path" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
             "sourceTree" : "<absolute>",
@@ -279,14 +347,14 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second::MAINGROUP::REF_7::REF_0",
+                "guid" : "PACKAGE:second::MAINGROUP::REF_11::REF_0",
                 "name" : "InputValidation.swift",
                 "path" : "InputValidation.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:second::MAINGROUP::REF_7",
+            "guid" : "PACKAGE:second::MAINGROUP::REF_11",
             "name" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
             "path" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
             "sourceTree" : "<absolute>",
@@ -305,16 +373,20 @@
       "projectIsPackage" : "true",
       "projectName" : "Laba2",
       "targets" : [
-        "40910c79db56748d3fee9381aac827dd5bb91c4c5221323176ec7cae63ed6f1b",
-        "dfb39a1190765a73a47c402f89b307bc56da202710c666e11ffbb0a42ab88e9d",
-        "8b813dd6f8d6cd750094d9d70fc06cffa5d6d386fe7aebb59f8f5277d2da8ba9",
-        "859b288dec7e0aabdef9a2b7a298db9977536dc62d7057696a58b74f7556da95",
-        "eff657ffddb2ac04b23681f20c40d089ee072dd046ef586f2c4e78286da6532e",
-        "f43de13ce48021da555ea9e273f9b4b7b7987b11e5a59045fef46207467bd9f6",
+        "c9f33fbe2b781999e73632ee2f5490b6a65a5c3f633d693b6c6038223f3d3f15",
+        "15b79d5ad59d9d29f210f7f7f64f08fbd6d0b910b7e0dde7a8ba745d9f5d409c",
+        "4f2e56ae26757c7edbfe416ab4e77a6617888a5cfe1deb66ef072befebbe72c7",
+        "9b7c33bd04590c5b5e5dea4f1109d452d3bde5014d38e4f90478e6667b49efae",
+        "9dc1f865609a1c5aa704659aea2055f1d3fb6e1ff148644bb687b48539e6fdcd",
+        "afb30d2e26224e79e9fd919e4d4025e67871e7243b91ff423e198f3de206f849",
+        "15ce8555da8ceb8e309ab417a7d4afbb9612cfc4f49848e254dcc5675b53d21f",
+        "ae750d992b4b7389218bb7bdd3e83dd608b0ed771692a7a91d0dc31ed976377e",
+        "eb58a5178c0f6947aba2944705489656ca681a51fc9b3a078cba457529f58b8e",
+        "ba42c11b600206a245667106e968e80e7f48fb84a14efe463d0795735b9c6cf4",
         "6c54422bbd29a1f7eef2c57afe5e3b3cdb417f5ce8eeff41bafad6b685b1c599"
       ]
     },
-    "signature" : "c37325a0abb22c7cb26f4ecf63715519c945d699efa8500a5316f20b864dda72",
+    "signature" : "e0af78eac432d8c9fd7196794fc051f3e61d243098cd56f703da13328d756a60",
     "type" : "project"
   },
   {
@@ -446,7 +518,21 @@
               "platformFilters" : [
 
               ],
+              "targetReference" : "PACKAGE-TARGET:PrimeNums"
+            },
+            {
+              "guid" : "PACKAGE-PRODUCT:second_Laba2.Laba2::BUILDPHASE_1::2",
+              "platformFilters" : [
+
+              ],
               "targetReference" : "PACKAGE-TARGET:MerseneNums"
+            },
+            {
+              "guid" : "PACKAGE-PRODUCT:second_Laba2.Laba2::BUILDPHASE_1::3",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:Trimmers"
             }
           ],
           "guid" : "PACKAGE-PRODUCT:second_Laba2.Laba2::BUILDPHASE_1",
@@ -467,7 +553,19 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:PrimeNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:MerseneNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:Trimmers",
           "platformFilters" : [
 
           ]
@@ -483,7 +581,7 @@
       "productTypeIdentifier" : "com.apple.product-type.tool",
       "type" : "standard"
     },
-    "signature" : "40910c79db56748d3fee9381aac827dd5bb91c4c5221323176ec7cae63ed6f1b",
+    "signature" : "c9f33fbe2b781999e73632ee2f5490b6a65a5c3f633d693b6c6038223f3d3f15",
     "type" : "target"
   },
   {
@@ -647,7 +745,19 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:PrimeNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:MerseneNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:Trimmers",
           "platformFilters" : [
 
           ]
@@ -663,7 +773,307 @@
       "productTypeIdentifier" : "org.swift.product-type.common.object",
       "type" : "standard"
     },
-    "signature" : "dfb39a1190765a73a47c402f89b307bc56da202710c666e11ffbb0a42ab88e9d",
+    "signature" : "15b79d5ad59d9d29f210f7f7f64f08fbd6d0b910b7e0dde7a8ba745d9f5d409c",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "MODULEMAP_FILE_CONTENTS" : "module Trimmers {\nheader \"Trimmers-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.Trimmers",
+            "PRODUCT_MODULE_NAME" : "Trimmers",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "Trimmers-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "Trimmers",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TARGET_NAME" : "Trimmers",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:Trimmers::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "MODULEMAP_FILE_CONTENTS" : "module Trimmers {\nheader \"Trimmers-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.Trimmers",
+            "PRODUCT_MODULE_NAME" : "Trimmers",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "Trimmers-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "Trimmers",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TARGET_NAME" : "Trimmers",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:Trimmers::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_4::REF_0",
+              "guid" : "PACKAGE-TARGET:Trimmers::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:Trimmers::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "dynamicTargetVariantGuid" : "PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic",
+      "guid" : "PACKAGE-TARGET:Trimmers",
+      "name" : "Trimmers",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:Trimmers",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "org.swift.product-type.library.static",
+      "type" : "standard"
+    },
+    "signature" : "4f2e56ae26757c7edbfe416ab4e77a6617888a5cfe1deb66ef072befebbe72c7",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "MODULEMAP_FILE_CONTENTS" : "module PrimeNums {\nheader \"PrimeNums-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.PrimeNums",
+            "PRODUCT_MODULE_NAME" : "PrimeNums",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "PrimeNums-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "PrimeNums",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TARGET_NAME" : "PrimeNums",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:PrimeNums::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "MODULEMAP_FILE_CONTENTS" : "module PrimeNums {\nheader \"PrimeNums-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.PrimeNums",
+            "PRODUCT_MODULE_NAME" : "PrimeNums",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "PrimeNums-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "PrimeNums",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TARGET_NAME" : "PrimeNums",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:PrimeNums::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_6::REF_0",
+              "guid" : "PACKAGE-TARGET:PrimeNums::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:PrimeNums::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "dynamicTargetVariantGuid" : "PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic",
+      "guid" : "PACKAGE-TARGET:PrimeNums",
+      "name" : "PrimeNums",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:PrimeNums",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "org.swift.product-type.library.static",
+      "type" : "standard"
+    },
+    "signature" : "9dc1f865609a1c5aa704659aea2055f1d3fb6e1ff148644bb687b48539e6fdcd",
     "type" : "target"
   },
   {
@@ -781,7 +1191,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_4::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_8::REF_0",
               "guid" : "PACKAGE-TARGET:MerseneNums::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -801,7 +1211,7 @@
       ],
       "dependencies" : [
         {
-          "guid" : "PACKAGE-TARGET:InputValidation",
+          "guid" : "PACKAGE-TARGET:PrimeNums",
           "platformFilters" : [
 
           ]
@@ -818,7 +1228,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "8b813dd6f8d6cd750094d9d70fc06cffa5d6d386fe7aebb59f8f5277d2da8ba9",
+    "signature" : "15ce8555da8ceb8e309ab417a7d4afbb9612cfc4f49848e254dcc5675b53d21f",
     "type" : "target"
   },
   {
@@ -936,7 +1346,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_6::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_10::REF_0",
               "guid" : "PACKAGE-TARGET:InputValidation::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -968,7 +1378,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "eff657ffddb2ac04b23681f20c40d089ee072dd046ef586f2c4e78286da6532e",
+    "signature" : "eb58a5178c0f6947aba2944705489656ca681a51fc9b3a078cba457529f58b8e",
     "type" : "target"
   },
   {
@@ -1016,6 +1426,300 @@
       "type" : "aggregate"
     },
     "signature" : "6c54422bbd29a1f7eef2c57afe5e3b3cdb417f5ce8eeff41bafad6b685b1c599",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "MODULEMAP_FILE_CONTENTS" : "module Trimmers {\nheader \"Trimmers-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.Trimmers",
+            "PRODUCT_MODULE_NAME" : "Trimmers",
+            "PRODUCT_NAME" : "Trimmers",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "Trimmers-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TARGET_NAME" : "Trimmers",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "MODULEMAP_FILE_CONTENTS" : "module Trimmers {\nheader \"Trimmers-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.Trimmers",
+            "PRODUCT_MODULE_NAME" : "Trimmers",
+            "PRODUCT_NAME" : "Trimmers",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "Trimmers-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/Trimmers.symbolgraphs",
+            "TARGET_NAME" : "Trimmers",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/Trimmers.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_5::REF_0",
+              "guid" : "PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "guid" : "PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic",
+      "name" : "Trimmers",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
+      "type" : "standard"
+    },
+    "signature" : "9b7c33bd04590c5b5e5dea4f1109d452d3bde5014d38e4f90478e6667b49efae",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "MODULEMAP_FILE_CONTENTS" : "module PrimeNums {\nheader \"PrimeNums-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.PrimeNums",
+            "PRODUCT_MODULE_NAME" : "PrimeNums",
+            "PRODUCT_NAME" : "PrimeNums",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "PrimeNums-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TARGET_NAME" : "PrimeNums",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "MODULEMAP_FILE_CONTENTS" : "module PrimeNums {\nheader \"PrimeNums-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.PrimeNums",
+            "PRODUCT_MODULE_NAME" : "PrimeNums",
+            "PRODUCT_NAME" : "PrimeNums",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "PrimeNums-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/PrimeNums.symbolgraphs",
+            "TARGET_NAME" : "PrimeNums",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/PrimeNums.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_7::REF_0",
+              "guid" : "PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "guid" : "PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic",
+      "name" : "PrimeNums",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
+      "type" : "standard"
+    },
+    "signature" : "afb30d2e26224e79e9fd919e4d4025e67871e7243b91ff423e198f3de206f849",
     "type" : "target"
   },
   {
@@ -1131,7 +1835,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_5::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_9::REF_0",
               "guid" : "PACKAGE-TARGET:MerseneNums-4E63B4BFA8DF027D-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1149,7 +1853,7 @@
               "platformFilters" : [
 
               ],
-              "targetReference" : "PACKAGE-TARGET:InputValidation"
+              "targetReference" : "PACKAGE-TARGET:PrimeNums"
             }
           ],
           "guid" : "PACKAGE-TARGET:MerseneNums-4E63B4BFA8DF027D-dynamic::BUILDPHASE_1",
@@ -1164,7 +1868,7 @@
       ],
       "dependencies" : [
         {
-          "guid" : "PACKAGE-TARGET:InputValidation",
+          "guid" : "PACKAGE-TARGET:PrimeNums",
           "platformFilters" : [
 
           ]
@@ -1180,7 +1884,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "859b288dec7e0aabdef9a2b7a298db9977536dc62d7057696a58b74f7556da95",
+    "signature" : "ae750d992b4b7389218bb7bdd3e83dd608b0ed771692a7a91d0dc31ed976377e",
     "type" : "target"
   },
   {
@@ -1296,7 +2000,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_7::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_11::REF_0",
               "guid" : "PACKAGE-TARGET:InputValidation-F21F8694F6ED72A-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1327,7 +2031,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "f43de13ce48021da555ea9e273f9b4b7b7987b11e5a59045fef46207467bd9f6",
+    "signature" : "ba42c11b600206a245667106e968e80e7f48fb84a14efe463d0795735b9c6cf4",
     "type" : "target"
   },
   {
@@ -1388,11 +2092,11 @@
       "projectIsPackage" : "true",
       "projectName" : "Aggregate",
       "targets" : [
-        "818084fd717d0709d3f482703e7090bebad99f1c317f8c20ca4118e6bb2ea38d",
-        "b076c735eaf04fee46782d6d638357e3c16397c1ef4658bb49659c3b71d9d372"
+        "95d4b975f9fc1d2f9b46ae32387a9bb43e2c4a7d22d3478d996ccd1b0417c052",
+        "325b19e74e82d283fcbd66a34149b01e523c34d1bf4a330703ef3598e88cff9e"
       ]
     },
-    "signature" : "7cb41c2349eea8f36bb7ef0001dd4f2582027d090fea0431aa661f060d032dee",
+    "signature" : "5ffd9bf407e97adfe754db901732bfd10e94ca2c0ece12092968737dd1f6af7c",
     "type" : "project"
   },
   {
@@ -1440,6 +2144,18 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:Trimmers",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:PrimeNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:MerseneNums",
           "platformFilters" : [
 
@@ -1456,7 +2172,7 @@
       "name" : "AllIncludingTests",
       "type" : "aggregate"
     },
-    "signature" : "818084fd717d0709d3f482703e7090bebad99f1c317f8c20ca4118e6bb2ea38d",
+    "signature" : "95d4b975f9fc1d2f9b46ae32387a9bb43e2c4a7d22d3478d996ccd1b0417c052",
     "type" : "target"
   },
   {
@@ -1504,6 +2220,18 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:Trimmers",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:PrimeNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:MerseneNums",
           "platformFilters" : [
 
@@ -1520,7 +2248,7 @@
       "name" : "AllExcludingTests",
       "type" : "aggregate"
     },
-    "signature" : "b076c735eaf04fee46782d6d638357e3c16397c1ef4658bb49659c3b71d9d372",
+    "signature" : "325b19e74e82d283fcbd66a34149b01e523c34d1bf4a330703ef3598e88cff9e",
     "type" : "target"
   }
 ]

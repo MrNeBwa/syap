@@ -1,10 +1,10 @@
 import Foundation
 import InputValidation
 import MerseneNums
+import Trimmers
 
-
-func readValidNumber() -> Int {
-    while True {
+func readValidNumber() -> Int? {
+    while true {
         print("Enter real number n: ", terminator: "")
         let line = readLine()
         guard let line else {
@@ -12,7 +12,7 @@ func readValidNumber() -> Int {
             return nil
         }
         do {
-            return try parseNaturalNumber()
+            return try parseNaturalNumber(line)
         } catch let error as InputError{
             print("Input Error: \(error)")
             
@@ -43,7 +43,34 @@ func askToRepeat() -> Bool {
 
 print(" === Laba2 ===")
 
+repeat {
+    guard let n = readValidNumber() else {
+        print("Input is corrupted")
+        break
+    }
+    let numbers = findMersenneNumbers(below: n)
+    if numbers.isEmpty {
+        print("Чисел Мерсенна, меньших \(n), не найдено.")
+    } else {
+        print("Числа Мерсенна, меньшие \(n):")
+        for number in numbers {
+            print("  \(number)") // использует description
+        }
+        print("Найдено чисел: \(numbers.count)")
+    }
+} while askToRepeat()
 
+print (" === Second Program ===")
+
+let trimFun : ([Int]) -> [Int] = trim
+
+repeat {
+    print("Input array: ", terminator: "\n")
+    let input = readLine() ?? ""
+    let seq = input.split(separator: " ").compactMap { Int($0) }
+    let trimmedArray = trimFun(seq)
+    print("Trimmed array: \(trimmedArray)")
+} while askToRepeat()
 
 
 print("End of program")

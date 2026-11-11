@@ -1,0 +1,4 @@
+module Trimmers {
+header "Trimmers-Swift.h"
+export *
+}

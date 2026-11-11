@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261103-2128-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.4.5"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="NeBwa"
+	OSRelease="7.2.11-arch1-1"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Fri, 16 Oct 2026 00:28:58 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="25"
+	ModelID="33"
+	ModelName="AMD Ryzen 7 5800X 8-Core Processor"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="32010"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3692.014893"
+	>
+	<Testing>
+		<StartDateTime>Nov 04 00:28 MSK</StartDateTime>
+		<StartTestTime>1793741297</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 04 00:28 MSK</EndDateTime>
+		<EndTestTime>1793741297</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

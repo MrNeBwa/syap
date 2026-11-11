@@ -157,7 +157,6 @@ void interface::createAccoutFun(std::vector<QLineEdit*> args) {
   const std::string name = args[0]->text().toStdString();
   const std::string password = args[1]->text().toStdString();
 
-  // Request to add (sent by whoever is using the app) ...
   const bool added = db_.add(name, password);
   if (!added) {
     diagram_.addCall(kUserKey, kUserDBKey, "addUser()", "exists");
@@ -165,8 +164,6 @@ void interface::createAccoutFun(std::vector<QLineEdit*> args) {
     setStatus(QString("Cannot add user: %1").arg(args[0]->text()));
     return;
   }
-
-  // ... the base receives it, creates the registered user and stores it.
   const std::uint32_t newId = nextUserId_++;
   const QString newKey = QString("%1:%2").arg(kRegUserKey).arg(newId);
   diagram_.ensureParticipant(
@@ -345,7 +342,6 @@ std::shared_ptr<forum> interface::currentForum() const {
 }
 
 void interface::resetDiagram() {
-  // Fixed columns, left to right; created users are appended on the right.
   diagram_.beginScenario();
   diagram_.ensureParticipant(kUserKey, userNameLabel(), kUserColor);
   diagram_.ensureParticipant(kForumKey, forumLabel(), kForumColor);
@@ -355,10 +351,8 @@ void interface::resetDiagram() {
 void interface::drawForumCall(const QString& method, const QString& reply) {
   diagram_.ensureParticipant(kUserKey, userNameLabel(), kUserColor);
   if (currentUser_) {
-    // A logged in user asks the forum and gets an answer back.
     diagram_.addCall(kUserKey, kForumKey, method, reply);
   } else {
-    // Nobody is logged in: the forum acts on its own (self message).
     diagram_.addMessage(kForumKey, kForumKey, method);
   }
 }

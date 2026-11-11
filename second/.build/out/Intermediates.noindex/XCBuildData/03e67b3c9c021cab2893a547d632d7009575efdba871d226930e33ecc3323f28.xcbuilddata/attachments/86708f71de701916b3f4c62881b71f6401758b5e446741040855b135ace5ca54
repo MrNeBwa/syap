@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trimmers-primary.dia",
+    "emit-module-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trimmers-primary-emit-module.d",
+    "emit-module-diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trimmers-primary-emit-module.dia",
+    "pch" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trimmers-primary-Bridging-header.pch",
+    "swift-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trimmers-primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift" : {
+    "const-values" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim.swiftconstvalues",
+    "dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim.d",
+    "diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim.dia",
+    "index-unit-output-path" : "/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim.o",
+    "llvm-bc" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim.bc",
+    "object" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim.o",
+    "swift-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim.swiftdeps",
+    "swiftmodule" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/Trimmers-t.build/Objects-normal/x86_64/Trim~partial.swiftmodule"
+  }
+}

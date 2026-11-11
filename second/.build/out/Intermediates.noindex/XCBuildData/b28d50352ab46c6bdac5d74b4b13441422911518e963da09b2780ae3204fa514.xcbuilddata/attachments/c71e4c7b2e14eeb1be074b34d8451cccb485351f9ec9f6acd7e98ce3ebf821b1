@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MerseneNums-primary.dia",
+    "emit-module-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MerseneNums-primary-emit-module.d",
+    "emit-module-diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MerseneNums-primary-emit-module.dia",
+    "pch" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MerseneNums-primary-Bridging-header.pch",
+    "swift-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MerseneNums-primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift" : {
+    "const-values" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums.swiftconstvalues",
+    "dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums.d",
+    "diagnostics" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums.dia",
+    "index-unit-output-path" : "/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums.o",
+    "llvm-bc" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums.bc",
+    "object" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums.o",
+    "swift-dependencies" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums.swiftdeps",
+    "swiftmodule" : "/home/nebwa/Projects/syap/second/.build/out/Intermediates.noindex/Laba2.build/Debug-linux-x86_64/MerseneNums-t.build/Objects-normal/x86_64/MersenneNums~partial.swiftmodule"
+  }
+}

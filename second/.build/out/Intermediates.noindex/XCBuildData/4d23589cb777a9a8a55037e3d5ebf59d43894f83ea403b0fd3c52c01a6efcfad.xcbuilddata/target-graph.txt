@@ -1,0 +1,14 @@
+Target dependency graph (5 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'Laba2-product' in project 'Laba2'
+➜ Explicit dependency on target 'PrimeNums' in project 'Laba2'
+➜ Explicit dependency on target 'MerseneNums' in project 'Laba2'
+➜ Explicit dependency on target 'InputValidation' in project 'Laba2'
+Target 'Laba2-product' in project 'Laba2'
+➜ Explicit dependency on target 'InputValidation' in project 'Laba2'
+➜ Explicit dependency on target 'PrimeNums' in project 'Laba2'
+➜ Explicit dependency on target 'MerseneNums' in project 'Laba2'
+Target 'MerseneNums' in project 'Laba2'
+➜ Explicit dependency on target 'PrimeNums' in project 'Laba2'
+Target 'PrimeNums' in project 'Laba2' (no dependencies)
+Target 'InputValidation' in project 'Laba2' (no dependencies)
