@@ -1,0 +1,4 @@
+module PrimeNums {
+header "PrimeNums-Swift.h"
+export *
+}

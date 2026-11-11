@@ -5,12 +5,12 @@ let package = Package(
     name: "Laba2",
     targets: [
         .target (name: "InputValidation"),
-
-        .target (name: "MerseneNums", dependencies: ["InputValidation"]),
-
+        .target (name: "PrimeNums"),
+        .target (name: "MerseneNums", dependencies: ["PrimeNums"]),
+        .target (name: "Trimmers"),
         .executableTarget(
             name: "Laba2",
-            dependencies: ["InputValidation", "MerseneNums"]
+            dependencies: ["InputValidation", "MerseneNums", "PrimeNums", "Trimmers"]
         )
     ]
 )
