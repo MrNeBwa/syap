@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift": {
+    "dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/main.d",
+    "object": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/main.swift.o",
+    "swiftmodule": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/main.swiftdeps",
+    "diagnostics": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/main.dia"  }
+}

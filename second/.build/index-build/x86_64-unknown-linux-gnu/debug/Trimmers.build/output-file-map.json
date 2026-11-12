@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift": {
+    "dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/Trim.d",
+    "object": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/Trim.swift.o",
+    "swiftmodule": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/Trim~partial.swiftmodule",
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/Trim.swiftdeps",
+    "diagnostics": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/Trim.dia"  }
+}

@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Laba3}",
+            "name": "Debug Laba3",
+            "target": "Laba3",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Laba3"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Laba3}",
+            "name": "Release Laba3",
+            "target": "Laba3",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Laba3"
+        }
+    ]
+}
