@@ -1,0 +1,800 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.InputValidation-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/lib/swift/usr/bin/swiftc",
+      "fileList" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources",
+      "importPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/InputValidation/InputValidation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "InputValidation",
+      "moduleOutputPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/InputValidation.swiftmodule",
+      "objects" : [
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/InputValidation.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/include/InputValidation-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "second",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/InputValidation.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/home/nebwa/Projects/syap/second/Sources/InputValidation/InputValidation.swift"
+      ],
+      "tempsPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Laba2-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/lib/swift/usr/bin/swiftc",
+      "fileList" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources",
+      "importPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/InputValidation.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/MerseneNums.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Trimmers.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Laba2",
+      "moduleOutputPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Laba2.swiftmodule",
+      "objects" : [
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Laba2_main",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "second",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Laba2.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift"
+      ],
+      "tempsPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MerseneNums-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/lib/swift/usr/bin/swiftc",
+      "fileList" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources",
+      "importPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MerseneNums",
+      "moduleOutputPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/MerseneNums.swiftmodule",
+      "objects" : [
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/MersenneNums.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/include/MerseneNums-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "second",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/MerseneNums.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift"
+      ],
+      "tempsPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.PrimeNums-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/lib/swift/usr/bin/swiftc",
+      "fileList" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources",
+      "importPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums/PrimeNums.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "PrimeNums",
+      "moduleOutputPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule",
+      "objects" : [
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/PrimeNums.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/include/PrimeNums-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "second",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/home/nebwa/Projects/syap/second/Sources/PrimeNums/PrimeNums.swift"
+      ],
+      "tempsPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Trimmers-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/lib/swift/usr/bin/swiftc",
+      "fileList" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources",
+      "importPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Trimmers",
+      "moduleOutputPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Trimmers.swiftmodule",
+      "objects" : [
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/Trim.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/include/Trimmers-Swift.h",
+        "-swift-version",
+        "6",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "second",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Trimmers.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift"
+      ],
+      "tempsPath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "InputValidation" : [
+      "/usr/lib/swift/usr/bin/swiftc",
+      "-module-name",
+      "InputValidation",
+      "-package-name",
+      "second",
+      "-c",
+      "/home/nebwa/Projects/syap/second/Sources/InputValidation/InputValidation.swift",
+      "-I",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/include/InputValidation-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "second",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/lib/swift/usr/bin/swiftc"
+    ],
+    "Laba2" : [
+      "/usr/lib/swift/usr/bin/swiftc",
+      "-module-name",
+      "Laba2",
+      "-package-name",
+      "second",
+      "-c",
+      "/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift",
+      "-I",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Laba2_main",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "second",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/lib/swift/usr/bin/swiftc"
+    ],
+    "MerseneNums" : [
+      "/usr/lib/swift/usr/bin/swiftc",
+      "-module-name",
+      "MerseneNums",
+      "-package-name",
+      "second",
+      "-c",
+      "/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift",
+      "-I",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/include/MerseneNums-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "second",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/lib/swift/usr/bin/swiftc"
+    ],
+    "PrimeNums" : [
+      "/usr/lib/swift/usr/bin/swiftc",
+      "-module-name",
+      "PrimeNums",
+      "-package-name",
+      "second",
+      "-c",
+      "/home/nebwa/Projects/syap/second/Sources/PrimeNums/PrimeNums.swift",
+      "-I",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/include/PrimeNums-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "second",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/lib/swift/usr/bin/swiftc"
+    ],
+    "Trimmers" : [
+      "/usr/lib/swift/usr/bin/swiftc",
+      "-module-name",
+      "Trimmers",
+      "-package-name",
+      "second",
+      "-c",
+      "/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift",
+      "-I",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/include/Trimmers-Swift.h",
+      "-swift-version",
+      "6",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "second",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/lib/swift/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "InputValidation" : [
+
+    ],
+    "Laba2" : [
+      "Trimmers",
+      "MerseneNums",
+      "PrimeNums",
+      "InputValidation"
+    ],
+    "MerseneNums" : [
+      "PrimeNums"
+    ],
+    "PrimeNums" : [
+
+    ],
+    "Trimmers" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : [
+      {
+
+      }
+    ]
+  },
+  "writeCommands" : {
+    "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/InputValidation/InputValidation.swift"
+        }
+      ],
+      "outputFilePath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources"
+    },
+    "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift"
+        }
+      ],
+      "outputFilePath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources"
+    },
+    "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift"
+        }
+      ],
+      "outputFilePath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources"
+    },
+    "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums/PrimeNums.swift"
+        }
+      ],
+      "outputFilePath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources"
+    },
+    "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift"
+        }
+      ],
+      "outputFilePath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources"
+    },
+    "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/usr/lib/swift/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"
+    }
+  }
+}

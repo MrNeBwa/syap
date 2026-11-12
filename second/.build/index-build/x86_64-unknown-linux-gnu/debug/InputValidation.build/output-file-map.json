@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/InputValidation/InputValidation.swift": {
+    "dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/InputValidation.d",
+    "object": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/InputValidation.swift.o",
+    "swiftmodule": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/InputValidation~partial.swiftmodule",
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/InputValidation.swiftdeps",
+    "diagnostics": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/InputValidation.dia"  }
+}

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/PrimeNums/PrimeNums.swift": {
+    "dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/PrimeNums.d",
+    "object": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/PrimeNums.swift.o",
+    "swiftmodule": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/PrimeNums~partial.swiftmodule",
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/PrimeNums.swiftdeps",
+    "diagnostics": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/PrimeNums.dia"  }
+}

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/primary.swiftdeps"
+  },
+  "/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift": {
+    "dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/MersenneNums.d",
+    "object": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/MersenneNums.swift.o",
+    "swiftmodule": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/MersenneNums~partial.swiftmodule",
+    "swift-dependencies": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/MersenneNums.swiftdeps",
+    "diagnostics": "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/MersenneNums.dia"  }
+}

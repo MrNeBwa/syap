@@ -1,0 +1,135 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "InputValidation-x86_64-unknown-linux-gnu-debug.module": ["<InputValidation-x86_64-unknown-linux-gnu-debug.module>"]
+  "Laba2-x86_64-unknown-linux-gnu-debug.module": ["<Laba2-x86_64-unknown-linux-gnu-debug.module>"]
+  "MerseneNums-x86_64-unknown-linux-gnu-debug.module": ["<MerseneNums-x86_64-unknown-linux-gnu-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "PrimeNums-x86_64-unknown-linux-gnu-debug.module": ["<PrimeNums-x86_64-unknown-linux-gnu-debug.module>"]
+  "Trimmers-x86_64-unknown-linux-gnu-debug.module": ["<Trimmers-x86_64-unknown-linux-gnu-debug.module>"]
+  "main": ["<InputValidation-x86_64-unknown-linux-gnu-debug.module>","<Laba2-x86_64-unknown-linux-gnu-debug.module>","<MerseneNums-x86_64-unknown-linux-gnu-debug.module>","<PrimeNums-x86_64-unknown-linux-gnu-debug.module>","<Trimmers-x86_64-unknown-linux-gnu-debug.module>"]
+  "test": ["<InputValidation-x86_64-unknown-linux-gnu-debug.module>","<Laba2-x86_64-unknown-linux-gnu-debug.module>","<MerseneNums-x86_64-unknown-linux-gnu-debug.module>","<PrimeNums-x86_64-unknown-linux-gnu-debug.module>","<Trimmers-x86_64-unknown-linux-gnu-debug.module>"]
+default: "main"
+nodes:
+  "/home/nebwa/Projects/syap/second/Sources/InputValidation/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/nebwa/Projects/syap/second/Sources/Laba2/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/nebwa/Projects/syap/second/Sources/MerseneNums/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/nebwa/Projects/syap/second/Sources/PrimeNums/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/nebwa/Projects/syap/second/Sources/Trimmers/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/nebwa/Projects/syap/second/Sources/InputValidation/InputValidation.swift"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources"]
+    description: "Write auxiliary file /home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources"
+
+  "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources"]
+    description: "Write auxiliary file /home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources"
+
+  "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources"]
+    description: "Write auxiliary file /home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources"
+
+  "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/nebwa/Projects/syap/second/Sources/PrimeNums/PrimeNums.swift"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources"]
+    description: "Write auxiliary file /home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources"
+
+  "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources"]
+    description: "Write auxiliary file /home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources"
+
+  "/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/usr/lib/swift/usr/bin/swiftc"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt"
+
+  "<InputValidation-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/InputValidation.swiftmodule"]
+    outputs: ["<InputValidation-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<Laba2-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Laba2.swiftmodule"]
+    outputs: ["<Laba2-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<MerseneNums-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/MerseneNums.swiftmodule"]
+    outputs: ["<MerseneNums-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<PrimeNums-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule"]
+    outputs: ["<PrimeNums-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<Trimmers-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Trimmers.swiftmodule"]
+    outputs: ["<Trimmers-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "C.InputValidation-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/nebwa/Projects/syap/second/Sources/InputValidation/InputValidation.swift","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/InputValidation.swiftmodule"]
+    description: "Compiling Swift Module 'InputValidation' (1 sources)"
+    args: ["/usr/lib/swift/usr/bin/swiftc","-module-name","InputValidation","-emit-dependencies","-emit-module","-emit-module-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/InputValidation.swiftmodule","-output-file-map","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/output-file-map.json","-parse-as-library","-incremental","@/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/sources","-I","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j16","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/InputValidation.build/include/InputValidation-Swift.h","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","second","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.Laba2-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/nebwa/Projects/syap/second/Sources/Laba2/main.swift","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/InputValidation.swiftmodule","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/MerseneNums.swiftmodule","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Trimmers.swiftmodule","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Laba2.swiftmodule"]
+    description: "Compiling Swift Module 'Laba2' (1 sources)"
+    args: ["/usr/lib/swift/usr/bin/swiftc","-module-name","Laba2","-emit-dependencies","-emit-module","-emit-module-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Laba2.swiftmodule","-output-file-map","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/output-file-map.json","-incremental","@/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Laba2.build/sources","-I","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j16","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","Laba2_main","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","second","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.MerseneNums-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/nebwa/Projects/syap/second/Sources/MerseneNums/MersenneNums.swift","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/MerseneNums.swiftmodule"]
+    description: "Compiling Swift Module 'MerseneNums' (1 sources)"
+    args: ["/usr/lib/swift/usr/bin/swiftc","-module-name","MerseneNums","-emit-dependencies","-emit-module","-emit-module-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/MerseneNums.swiftmodule","-output-file-map","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/output-file-map.json","-parse-as-library","-incremental","@/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/sources","-I","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j16","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/MerseneNums.build/include/MerseneNums-Swift.h","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","second","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.PrimeNums-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/nebwa/Projects/syap/second/Sources/PrimeNums/PrimeNums.swift","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule"]
+    description: "Compiling Swift Module 'PrimeNums' (1 sources)"
+    args: ["/usr/lib/swift/usr/bin/swiftc","-module-name","PrimeNums","-emit-dependencies","-emit-module","-emit-module-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/PrimeNums.swiftmodule","-output-file-map","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/output-file-map.json","-parse-as-library","-incremental","@/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/sources","-I","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j16","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/PrimeNums.build/include/PrimeNums-Swift.h","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","second","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.Trimmers-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/nebwa/Projects/syap/second/Sources/Trimmers/Trim.swift","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/swift-version-65100FF0E23E9218.txt","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources"]
+    outputs: ["/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Trimmers.swiftmodule"]
+    description: "Compiling Swift Module 'Trimmers' (1 sources)"
+    args: ["/usr/lib/swift/usr/bin/swiftc","-module-name","Trimmers","-emit-dependencies","-emit-module","-emit-module-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/Trimmers.swiftmodule","-output-file-map","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/output-file-map.json","-parse-as-library","-incremental","@/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/sources","-I","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j16","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/home/nebwa/Projects/syap/second/.build/index-build/x86_64-unknown-linux-gnu/debug/Trimmers.build/include/Trimmers-Swift.h","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","second","-Xcc","-fno-omit-frame-pointer"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/home/nebwa/Projects/syap/second/Sources/InputValidation/","/home/nebwa/Projects/syap/second/Sources/Laba2/","/home/nebwa/Projects/syap/second/Sources/MerseneNums/","/home/nebwa/Projects/syap/second/Sources/PrimeNums/","/home/nebwa/Projects/syap/second/Sources/Trimmers/","/home/nebwa/Projects/syap/second/Package.swift","/home/nebwa/Projects/syap/second/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
