@@ -11,6 +11,10 @@ let package = Package(
         .executableTarget(
             name: "Laba2",
             dependencies: ["InputValidation", "MerseneNums", "PrimeNums", "Trimmers"]
-        )
+        ),
+        .testTarget(
+            name: "MerseneTests",
+            dependencies: ["InputValidation", "MerseneNums", "PrimeNums", "Trimmers"]
+        ),
     ]
 )

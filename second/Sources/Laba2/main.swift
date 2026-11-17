@@ -40,8 +40,7 @@ func askToRepeat() -> Bool {
     }
 }
 
-
-print(" === Laba2 ===")
+print(" === Laba2 | First Task ===")
 
 repeat {
     guard let n = readValidNumber() else {
@@ -54,22 +53,19 @@ repeat {
     } else {
         print("Числа Мерсенна, меньшие \(n):")
         for number in numbers {
-            print("  \(number)") // использует description
+            print("  \(number)")
         }
         print("Найдено чисел: \(numbers.count)")
     }
 } while askToRepeat()
 
-print (" === Second Program ===")
+print (" === Second Task ===")
 
 let trimFun : ([Int]) -> [Int] = trim
 
 repeat {
-    print("Input array: ", terminator: "\n")
-    let input = readLine() ?? ""
-    let seq = input.split(separator: " ").compactMap { Int($0) }
-    let trimmedArray = trimFun(seq)
-    print("Trimmed array: \(trimmedArray)")
+    guard let seq = InputValidation.readValid(prompt: "Введите целые числа через пробел:", parse: parseIntSequence) else { break }
+    print("Результат: \(trimFun(seq))")
 } while askToRepeat()
 
 
