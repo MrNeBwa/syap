@@ -118,7 +118,7 @@
     }
   },
   "recordBuildBacktraces" : false,
-  "schedulerLaneWidthOverride" : 16,
+  "schedulerLaneWidthOverride" : 12,
   "schemeCommand" : "launch",
   "showNonLoggedProgress" : true,
   "useDryRun" : false,

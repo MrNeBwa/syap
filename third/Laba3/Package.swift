@@ -9,17 +9,18 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(name: "Employee"),
+        .target(name: "InputValidation"),
+        .target(name: "Employee", dependencies: ["InputValidation"]),
         .executableTarget(
             name: "Laba3",
-            dependencies: ["Employee"],
+            dependencies: ["Employee", "InputValidation"],
             swiftSettings: [
                 .enableUpcomingFeature("ApproachableConcurrency"),
             ],
         ),
         .testTarget(
             name: "Laba3Tests",
-            dependencies: ["Laba3"],
+            dependencies: ["Employee", "InputValidation"],
             swiftSettings: [
                 .enableUpcomingFeature("ApproachableConcurrency"),
             ],

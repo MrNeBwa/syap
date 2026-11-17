@@ -1,21 +1,27 @@
-public class Employer{
+import InputValidation
+public final class Employee {
     var name: String
-    var surname: String
-    var age: Int
-    var stage: Int
     var jobTitle: String
+    var experience: Int
 
-        public init(name: String, surname: String, age: Int, stage: Int, jobTitle: String) {
-        self.name = name
-        self.surname = surname
-        self.age = age
-        self.stage = stage
-        self.jobTitle = jobTitle
+    /// Создаёт сотрудника. Выбрасывает `ValidationError`, если данные некорректны.
+    public init(name: String, jobTitle: String, experience: Int) throws {
+        self.name = try Validator.validateName(name)
+        self.jobTitle = try Validator.validateJobTitle(jobTitle)
+        self.experience = try Validator.validateExperience(experience)
     }
-    convenience init(name: String, age: Int, stage: Int, jobTitle: String) {
-        self.init(name: name, surname: "", age: age, stage: stage, jobTitle: jobTitle)
+
+    public func updateJobTitle(to newJobTitle: String) throws {
+        self.jobTitle = try Validator.validateJobTitle(newJobTitle)
     }
-    convenience init(name: String, stage: Int, jobTitle: String) {
-        self.init(name: name, surname: "", age: 0, stage: stage, jobTitle: jobTitle)
+    
+    /// Строка вида «Имя: Василий Должность: Системный администратор Стаж: 3 года».
+    public var info: String {
+        "Имя: \(name) Должность: \(jobTitle) Стаж: \(YearsFormatter.format(experience))"
+    }
+
+    /// Выводит информацию о сотруднике в консоль.
+    public func printInfo() {
+        print(info)
     }
 }

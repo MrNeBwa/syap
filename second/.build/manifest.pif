@@ -5,11 +5,11 @@
       "name" : "Laba2",
       "path" : "/home/nebwa/Projects/syap/second",
       "projects" : [
-        "e0af78eac432d8c9fd7196794fc051f3e61d243098cd56f703da13328d756a60",
-        "5ffd9bf407e97adfe754db901732bfd10e94ca2c0ece12092968737dd1f6af7c"
+        "bb1a930e30b8a187c8270447491bc80fbe530843f2904ef6016d579348addda3",
+        "b6883727ddc3c889dbad03e01d15f5a891a1dad0c52c9b1e5f396da1a050de0c"
       ]
     },
-    "signature" : "0aef0b86c2c51f09df986bfd7a1fc06eadfe16242d465d17c9bb0f9dd8e30130",
+    "signature" : "f3e7c34512e2986e23dea159d189e6b6aea31763b15961be591138a659675447",
     "type" : "workspace"
   },
   {
@@ -195,15 +195,15 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second::MAINGROUP::REF_2::REF_0",
-                "name" : "main.swift",
-                "path" : "main.swift",
+                "name" : "tests.swift",
+                "path" : "tests.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:second::MAINGROUP::REF_2",
-            "name" : "/home/nebwa/Projects/syap/second/Sources/Laba2",
-            "path" : "/home/nebwa/Projects/syap/second/Sources/Laba2",
+            "name" : "/home/nebwa/Projects/syap/second/Tests/MerseneTests",
+            "path" : "/home/nebwa/Projects/syap/second/Tests/MerseneTests",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -229,15 +229,15 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second::MAINGROUP::REF_4::REF_0",
-                "name" : "Trim.swift",
-                "path" : "Trim.swift",
+                "name" : "main.swift",
+                "path" : "main.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:second::MAINGROUP::REF_4",
-            "name" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
-            "path" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/Laba2",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/Laba2",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -263,15 +263,15 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second::MAINGROUP::REF_6::REF_0",
-                "name" : "PrimeNums.swift",
-                "path" : "PrimeNums.swift",
+                "name" : "Trim.swift",
+                "path" : "Trim.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:second::MAINGROUP::REF_6",
-            "name" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
-            "path" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/Trimmers",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -297,15 +297,15 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second::MAINGROUP::REF_8::REF_0",
-                "name" : "MersenneNums.swift",
-                "path" : "MersenneNums.swift",
+                "name" : "PrimeNums.swift",
+                "path" : "PrimeNums.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:second::MAINGROUP::REF_8",
-            "name" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
-            "path" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/PrimeNums",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -331,15 +331,15 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second::MAINGROUP::REF_10::REF_0",
-                "name" : "InputValidation.swift",
-                "path" : "InputValidation.swift",
+                "name" : "MersenneNums.swift",
+                "path" : "MersenneNums.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:second::MAINGROUP::REF_10",
-            "name" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
-            "path" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/MerseneNums",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -359,6 +359,23 @@
             "path" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
             "sourceTree" : "<absolute>",
             "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second::MAINGROUP::REF_12::REF_0",
+                "name" : "InputValidation.swift",
+                "path" : "InputValidation.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:second::MAINGROUP::REF_12",
+            "name" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
+            "path" : "/home/nebwa/Projects/syap/second/Sources/InputValidation",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
           }
         ],
         "guid" : "PACKAGE:second::MAINGROUP",
@@ -373,21 +390,406 @@
       "projectIsPackage" : "true",
       "projectName" : "Laba2",
       "targets" : [
-        "c9f33fbe2b781999e73632ee2f5490b6a65a5c3f633d693b6c6038223f3d3f15",
-        "15b79d5ad59d9d29f210f7f7f64f08fbd6d0b910b7e0dde7a8ba745d9f5d409c",
-        "4f2e56ae26757c7edbfe416ab4e77a6617888a5cfe1deb66ef072befebbe72c7",
-        "9b7c33bd04590c5b5e5dea4f1109d452d3bde5014d38e4f90478e6667b49efae",
-        "9dc1f865609a1c5aa704659aea2055f1d3fb6e1ff148644bb687b48539e6fdcd",
-        "afb30d2e26224e79e9fd919e4d4025e67871e7243b91ff423e198f3de206f849",
-        "15ce8555da8ceb8e309ab417a7d4afbb9612cfc4f49848e254dcc5675b53d21f",
-        "ae750d992b4b7389218bb7bdd3e83dd608b0ed771692a7a91d0dc31ed976377e",
-        "eb58a5178c0f6947aba2944705489656ca681a51fc9b3a078cba457529f58b8e",
-        "ba42c11b600206a245667106e968e80e7f48fb84a14efe463d0795735b9c6cf4",
-        "6c54422bbd29a1f7eef2c57afe5e3b3cdb417f5ce8eeff41bafad6b685b1c599"
+        "364c814cc0da8faf19a86dc299c693c8ebdc8783b0df7580025c4d29be345a84",
+        "f4b5782a6485656b84b19e9bbee9b57904e46dff2c43f9e1a98ff2451dd52e85",
+        "772cee82aad451b6b2b8424daf6d73211091541ae581a78633025a4f74e3d241",
+        "1c9980a600275c0276caa4388fb4a55ee4213f8028ee1f6e0373ead71f3ac540",
+        "fdcdd87089b5dc19af4afcd7eb758830ba46bd33f159f93f3575d6070f0a89d8",
+        "85751ac3ebb223af257320117af15d0e362c5cac0beda77b17f75caea64cabef",
+        "af8b8c80be2f6cd033d90fb2f11029ad387aaf0c55f0f30ba87e9f5e3de25db5",
+        "8fb894de4a73c3e2207c9299b2a3bd9fdab7945df28a7ce735de47983a0b8358",
+        "bcd98e3282d336795cfeaf860244cdc5fc2ba7524c3bf1e10a7d878fd3aca33c",
+        "d91f98f06133a2b82c7e484a651a56dd961dbc3fa0cfd469235b1cc7b5426fe4",
+        "43434f098ae07e5e6613171b9e4ff89003ce65c4b3d0812dabfc3256eaa19606",
+        "87630ede4d696ecaf79e2e35b89bef5d01526927a4873c02127c1587873cb114",
+        "bdcb4b87a26676cb83f256aa08f9f3ba8a1f686f198c71c6cd5e8a9fef2b9183"
       ]
     },
-    "signature" : "e0af78eac432d8c9fd7196794fc051f3e61d243098cd56f703da13328d756a60",
+    "signature" : "bb1a930e30b8a187c8270447491bc80fbe530843f2904ef6016d579348addda3",
     "type" : "project"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "APPLE_TEST_BUNDLE_RPATH" : "$(APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_$(SHALLOW_BUNDLE:default=NO))",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_NO" : "@loader_path/../../..",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_YES" : "@loader_path/../..",
+            "BUILD_SERVER_PROTOCOL_TARGET_TAGS" : [
+              "$(inherited)",
+              "test"
+            ],
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_INFOPLIST_FILE" : "YES",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(RPATH_ORIGIN)/Frameworks",
+              "$(RPATH_ORIGIN)/../Frameworks",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=driverkit]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios-maccatalyst]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios;ios-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=macos]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=tvos;tvos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=watchos;watchos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=xros;xros-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "MACOSX_DEPLOYMENT_TARGET" : "12.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.MerseneTests",
+            "PRODUCT_MODULE_NAME" : "MerseneTests",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/MerseneTests.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/MerseneTests.symbolgraphs",
+            "TARGET_NAME" : "MerseneTests",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "APPLE_TEST_BUNDLE_RPATH" : "$(APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_$(SHALLOW_BUNDLE:default=NO))",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_NO" : "@loader_path/../../..",
+            "APPLE_TEST_BUNDLE_RPATH_SHALLOW_BUNDLE_YES" : "@loader_path/../..",
+            "BUILD_SERVER_PROTOCOL_TARGET_TAGS" : [
+              "$(inherited)",
+              "test"
+            ],
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_INFOPLIST_FILE" : "YES",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(RPATH_ORIGIN)/Frameworks",
+              "$(RPATH_ORIGIN)/../Frameworks",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=driverkit]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios-maccatalyst]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=ios;ios-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=macos]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=tvos;tvos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=watchos;watchos-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "LD_RUNPATH_SEARCH_PATHS[__platform_filter=xros;xros-simulator]" : [
+              "$(APPLE_TEST_BUNDLE_RPATH)",
+              "$(inherited)"
+            ],
+            "MACOSX_DEPLOYMENT_TARGET" : "12.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.MerseneTests",
+            "PRODUCT_MODULE_NAME" : "MerseneTests",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)"
+            ],
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "second",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/MerseneTests.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/MerseneTests.symbolgraphs",
+            "TARGET_NAME" : "MerseneTests",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_2::REF_0",
+              "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:InputValidation"
+            },
+            {
+              "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDPHASE_1::1",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:PrimeNums"
+            },
+            {
+              "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDPHASE_1::2",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:MerseneNums"
+            },
+            {
+              "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDPHASE_1::3",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:Trimmers"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-TARGET:InputValidation",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:PrimeNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:MerseneNums",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:Trimmers",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests",
+      "name" : "MerseneTests-product",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:second_MerseneTests.MerseneTests",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.bundle.unit-test",
+      "type" : "standard"
+    },
+    "signature" : "364c814cc0da8faf19a86dc299c693c8ebdc8783b0df7580025c4d29be345a84",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(inherited)",
+              "$(RPATH_ORIGIN)"
+            ],
+            "LINKER_DRIVER" : "swiftc",
+            "MACOSX_DEPLOYMENT_TARGET" : "12.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.MerseneTests-test-runner",
+            "PRODUCT_MODULE_NAME" : "MerseneTests_test_runner",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_VERSION" : "5.0",
+            "TARGET_NAME" : "MerseneTests-test-runner",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-TARGET:MerseneTests_test_runner::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "LD_RUNPATH_SEARCH_PATHS" : [
+              "$(inherited)",
+              "$(RPATH_ORIGIN)"
+            ],
+            "LINKER_DRIVER" : "swiftc",
+            "MACOSX_DEPLOYMENT_TARGET" : "12.0",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "second.MerseneTests-test-runner",
+            "PRODUCT_MODULE_NAME" : "MerseneTests_test_runner",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "NO",
+            "SWIFT_VERSION" : "5.0",
+            "TARGET_NAME" : "MerseneTests-test-runner",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-TARGET:MerseneTests_test_runner::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+
+          ],
+          "guid" : "PACKAGE-TARGET:MerseneTests_test_runner::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-TARGET:MerseneTests_test_runner::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:MerseneTests_test_runner::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-TARGET:MerseneTests_test_runner",
+      "name" : "MerseneTests-test-runner",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:MerseneTests_test_runner",
+        "name" : "MerseneTests-test-runner",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.tool.swiftpm-test-runner",
+      "type" : "standard"
+    },
+    "signature" : "f4b5782a6485656b84b19e9bbee9b57904e46dff2c43f9e1a98ff2451dd52e85",
+    "type" : "target"
   },
   {
     "contents" : {
@@ -493,7 +895,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_2::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_3::REF_0",
               "guid" : "PACKAGE-PRODUCT:second_Laba2.Laba2::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -581,7 +983,7 @@
       "productTypeIdentifier" : "com.apple.product-type.tool",
       "type" : "standard"
     },
-    "signature" : "c9f33fbe2b781999e73632ee2f5490b6a65a5c3f633d693b6c6038223f3d3f15",
+    "signature" : "772cee82aad451b6b2b8424daf6d73211091541ae581a78633025a4f74e3d241",
     "type" : "target"
   },
   {
@@ -719,7 +1121,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_3::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_4::REF_0",
               "guid" : "PACKAGE-TARGET:Laba2-C9A96D4E787-testable::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -773,7 +1175,7 @@
       "productTypeIdentifier" : "org.swift.product-type.common.object",
       "type" : "standard"
     },
-    "signature" : "15b79d5ad59d9d29f210f7f7f64f08fbd6d0b910b7e0dde7a8ba745d9f5d409c",
+    "signature" : "1c9980a600275c0276caa4388fb4a55ee4213f8028ee1f6e0373ead71f3ac540",
     "type" : "target"
   },
   {
@@ -891,7 +1293,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_4::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_5::REF_0",
               "guid" : "PACKAGE-TARGET:Trimmers::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -923,7 +1325,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "4f2e56ae26757c7edbfe416ab4e77a6617888a5cfe1deb66ef072befebbe72c7",
+    "signature" : "fdcdd87089b5dc19af4afcd7eb758830ba46bd33f159f93f3575d6070f0a89d8",
     "type" : "target"
   },
   {
@@ -1041,7 +1443,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_6::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_7::REF_0",
               "guid" : "PACKAGE-TARGET:PrimeNums::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1073,7 +1475,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "9dc1f865609a1c5aa704659aea2055f1d3fb6e1ff148644bb687b48539e6fdcd",
+    "signature" : "af8b8c80be2f6cd033d90fb2f11029ad387aaf0c55f0f30ba87e9f5e3de25db5",
     "type" : "target"
   },
   {
@@ -1191,7 +1593,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_8::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_9::REF_0",
               "guid" : "PACKAGE-TARGET:MerseneNums::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1228,7 +1630,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "15ce8555da8ceb8e309ab417a7d4afbb9612cfc4f49848e254dcc5675b53d21f",
+    "signature" : "bcd98e3282d336795cfeaf860244cdc5fc2ba7524c3bf1e10a7d878fd3aca33c",
     "type" : "target"
   },
   {
@@ -1346,7 +1748,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_10::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_11::REF_0",
               "guid" : "PACKAGE-TARGET:InputValidation::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1378,7 +1780,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "eb58a5178c0f6947aba2944705489656ca681a51fc9b3a078cba457529f58b8e",
+    "signature" : "43434f098ae07e5e6613171b9e4ff89003ce65c4b3d0812dabfc3256eaa19606",
     "type" : "target"
   },
   {
@@ -1419,13 +1821,24 @@
 
       ],
       "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests",
+          "platformFilters" : [
 
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:MerseneTests_test_runner",
+          "platformFilters" : [
+
+          ]
+        }
       ],
       "guid" : "PACKAGE-PRODUCT:second-Laba2PackageTests.Laba2PackageTests",
       "name" : "Laba2PackageTests-product",
       "type" : "aggregate"
     },
-    "signature" : "6c54422bbd29a1f7eef2c57afe5e3b3cdb417f5ce8eeff41bafad6b685b1c599",
+    "signature" : "bdcb4b87a26676cb83f256aa08f9f3ba8a1f686f198c71c6cd5e8a9fef2b9183",
     "type" : "target"
   },
   {
@@ -1541,7 +1954,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_5::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_6::REF_0",
               "guid" : "PACKAGE-TARGET:Trimmers--24E17645B8AF25A5-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1572,7 +1985,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "9b7c33bd04590c5b5e5dea4f1109d452d3bde5014d38e4f90478e6667b49efae",
+    "signature" : "85751ac3ebb223af257320117af15d0e362c5cac0beda77b17f75caea64cabef",
     "type" : "target"
   },
   {
@@ -1688,7 +2101,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_7::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_8::REF_0",
               "guid" : "PACKAGE-TARGET:PrimeNums--189F9FDF57B04F57-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1719,7 +2132,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "afb30d2e26224e79e9fd919e4d4025e67871e7243b91ff423e198f3de206f849",
+    "signature" : "8fb894de4a73c3e2207c9299b2a3bd9fdab7945df28a7ce735de47983a0b8358",
     "type" : "target"
   },
   {
@@ -1835,7 +2248,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_9::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_10::REF_0",
               "guid" : "PACKAGE-TARGET:MerseneNums-4E63B4BFA8DF027D-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1884,7 +2297,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "ae750d992b4b7389218bb7bdd3e83dd608b0ed771692a7a91d0dc31ed976377e",
+    "signature" : "d91f98f06133a2b82c7e484a651a56dd961dbc3fa0cfd469235b1cc7b5426fe4",
     "type" : "target"
   },
   {
@@ -2000,7 +2413,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:second::MAINGROUP::REF_11::REF_0",
+              "fileReference" : "PACKAGE:second::MAINGROUP::REF_12::REF_0",
               "guid" : "PACKAGE-TARGET:InputValidation-F21F8694F6ED72A-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2031,7 +2444,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "ba42c11b600206a245667106e968e80e7f48fb84a14efe463d0795735b9c6cf4",
+    "signature" : "87630ede4d696ecaf79e2e35b89bef5d01526927a4873c02127c1587873cb114",
     "type" : "target"
   },
   {
@@ -2092,11 +2505,11 @@
       "projectIsPackage" : "true",
       "projectName" : "Aggregate",
       "targets" : [
-        "95d4b975f9fc1d2f9b46ae32387a9bb43e2c4a7d22d3478d996ccd1b0417c052",
+        "3b26db9fb498b3d7942e5786498339f8b2ccf33251d29e6541d5c7f5cb383080",
         "325b19e74e82d283fcbd66a34149b01e523c34d1bf4a330703ef3598e88cff9e"
       ]
     },
-    "signature" : "5ffd9bf407e97adfe754db901732bfd10e94ca2c0ece12092968737dd1f6af7c",
+    "signature" : "b6883727ddc3c889dbad03e01d15f5a891a1dad0c52c9b1e5f396da1a050de0c",
     "type" : "project"
   },
   {
@@ -2138,6 +2551,18 @@
       ],
       "dependencies" : [
         {
+          "guid" : "PACKAGE-PRODUCT:second_MerseneTests.MerseneTests",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:MerseneTests_test_runner",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-PRODUCT:second_Laba2.Laba2",
           "platformFilters" : [
 
@@ -2172,7 +2597,7 @@
       "name" : "AllIncludingTests",
       "type" : "aggregate"
     },
-    "signature" : "95d4b975f9fc1d2f9b46ae32387a9bb43e2c4a7d22d3478d996ccd1b0417c052",
+    "signature" : "3b26db9fb498b3d7942e5786498339f8b2ccf33251d29e6541d5c7f5cb383080",
     "type" : "target"
   },
   {
