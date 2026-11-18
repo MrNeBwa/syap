@@ -19,7 +19,7 @@ let package = Package(
         ),
         .testTarget(
             name: "Laba4Tests",
-            dependencies: ["Laba4"],
+            dependencies: ["ValidateInput"],
             swiftSettings: [
                 .enableUpcomingFeature("ApproachableConcurrency"),
             ],
