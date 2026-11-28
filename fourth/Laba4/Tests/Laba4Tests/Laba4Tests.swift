@@ -65,7 +65,6 @@ final class Laba4Tests: XCTestCase {
         XCTAssertEqual(try Validator.validateDouble("3,14"), 3.14)
         XCTAssertEqual(try Validator.validateFloat("-2,5"), -2.5)
         XCTAssertEqual(try Validator.validateDecimal("12,34"), Decimal(string: "12.34")!)
-
         XCTAssertThrowsError(try Validator.validateInt("  ")) { XCTAssertEqual($0 as? ValidationError, .emptyInput) }
         XCTAssertThrowsError(try Validator.validateInt("abc")) { XCTAssertEqual($0 as? ValidationError, .invalidNumberFormat("Int")) }
         XCTAssertThrowsError(try Validator.validateInt("99999999999999999999999")) { XCTAssertEqual($0 as? ValidationError, .numberOutOfRange("Int")) }

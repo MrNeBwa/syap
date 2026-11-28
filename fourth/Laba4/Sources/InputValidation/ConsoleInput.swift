@@ -1,6 +1,5 @@
 import Foundation
 
-/// Чтение и валидация пользовательского ввода из консоли.
 public enum ConsoleInput {
     public static func read<T>(
         prompt: String,

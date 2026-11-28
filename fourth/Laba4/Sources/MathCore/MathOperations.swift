@@ -1,6 +1,5 @@
 import Foundation
 
-/// Протокол для выполнения основных математических операций над различными числовыми типами.
 public protocol MathOperations: AnyObject {
     var name: String { get }
 
@@ -11,7 +10,6 @@ public protocol MathOperations: AnyObject {
     func power(_ base: NumericValue, _ exponent: NumericValue) throws -> NumericValue
 }
 
-/// Расширение протокола с единым методом запуска выбранной операции.
 public extension MathOperations {
     func execute(_ operation: MathOperation, _ lhs: NumericValue, _ rhs: NumericValue) throws -> NumericValue {
         switch operation {
