@@ -78,8 +78,6 @@ public enum NumericValue: Equatable, CustomStringConvertible, Sendable {
         }
     }
 }
-
-/// Доступные математические операции.
 public enum MathOperation: Int, CaseIterable, Equatable, CustomStringConvertible, Sendable {
     case add = 1
     case subtract = 2
@@ -108,7 +106,6 @@ public enum MathOperation: Int, CaseIterable, Equatable, CustomStringConvertible
     }
 }
 
-/// Ошибки при выполнении математических операций.
 public enum MathError: Error, LocalizedError, Equatable, Sendable {
     case divisionByZero
     case integerOverflow
@@ -118,7 +115,7 @@ public enum MathError: Error, LocalizedError, Equatable, Sendable {
     public var errorDescription: String? {
         switch self {
         case .divisionByZero:
-            return "Деление на ноль недопустимо."
+            return "Деление на ноль."
         case .integerOverflow:
             return "Переполнение целочисленного типа Int."
         case .floatingPointOverflow:

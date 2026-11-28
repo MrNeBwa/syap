@@ -5,12 +5,11 @@ import InputValidation
 @main
 struct Laba4 {
     static func main() {
-        // Работа ведётся исключительно через экземпляр протокола MathOperations.
         let calculator: any MathOperations = Calculator()
-        run(with: calculator)
+        run(calc: calculator)
     }
 
-    private static func run(with calculator: any MathOperations) {
+    private static func run(calc calculator: any MathOperations) {
         print("=== \(calculator.name) ===")
 
         while true {

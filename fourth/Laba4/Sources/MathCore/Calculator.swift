@@ -1,6 +1,5 @@
 import Foundation
 
-/// Базовый класс калькулятора, реализующий протокол `MathOperations`.
 open class BaseCalculator: MathOperations {
     open var name: String { "Базовый калькулятор" }
 
@@ -107,7 +106,6 @@ open class BaseCalculator: MathOperations {
         }
     }
 
-    // MARK: - Вспомогательные методы
 
     private func commonType(_ lhs: NumericValue, _ rhs: NumericValue) -> NumericType {
         switch (lhs.numericType, rhs.numericType) {
@@ -205,9 +203,8 @@ open class BaseCalculator: MathOperations {
     }
 }
 
-/// Наследник базового калькулятора (демонстрирует наследование и переопределение).
 public final class Calculator: BaseCalculator {
-    public override var name: String { "Калькулятор (вариант 13)" }
+    public override var name: String { "Калькулятор" }
 
     public override init() {
         super.init()

@@ -1,6 +1,5 @@
 import Foundation
 
-/// Ошибки валидации пользовательского ввода.
 public enum ValidationError: Error, LocalizedError, Equatable, Sendable {
     case emptyInput
     case invalidMenuChoice(ClosedRange<Int>)
@@ -24,7 +23,6 @@ public enum ValidationError: Error, LocalizedError, Equatable, Sendable {
     }
 }
 
-/// Валидация пользовательского ввода (пункты меню и числа разных типов).
 public enum Validator {
     public static func validateMenuChoice(_ raw: String, in range: ClosedRange<Int>) throws -> Int {
         let text = try nonEmpty(raw)
@@ -80,7 +78,6 @@ public enum Validator {
         return value
     }
 
-    // MARK: - Вспомогательные проверки
 
     private static func nonEmpty(_ raw: String) throws -> String {
         let trimmed = raw.trimmingCharacters(in: .whitespacesAndNewlines)
